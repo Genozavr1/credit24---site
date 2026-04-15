@@ -1,6 +1,5 @@
 Создание нового, современного удобного для пользователей, для поисковиков и для ИИ сайта  - credit24.ru компании "Кредит Консалтинг". Сайт должен вобрать в себя всё лучшее, что на данный момент есть у конкурентов и вообще в мире.
 Сайт должен быть на WordPress чтобы можно было легко менять, добавлять информацию не привлекая специалистов
 Конкуренты, кредитные брокеры из Москвы и других городов России - 
-atiffinance.ru domkredita.ru mbk.ru binkor.ru finardi.ru akbfin.ru hifinance.ru mosinvestfinans.ru mkbkfin.ru lcred.ru creditor.ru re-finance.ru
-Желательно воспользоваться новинками в разработке сайта в США, так как пркатически все инновации начинаются отттуда.  
-Хотелось бы чтобы код был написан ИИ и доведен до ума лучшим СЕО специалистом Александром
+atiffinance.ru domkredita.ru mbk.ru binkor.ru finardi.ru akbfin.ru hifinance.ru mosinvestfinans.ru mkbkfin.ru lcred.ru creditor.ru re-finance.ru 
+
