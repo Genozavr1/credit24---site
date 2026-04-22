@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Новый первый экран — Кредит Консалтинг (концепт)</title>
+<style>
+:root {
+  --green: #0F6E56;
+  --green-dark: #04342C;
+  --green-light: #E1F5EE;
+  --green-bg: #F4FAF6;
+  --amber-bg: #FAEEDA;
+  --amber-text: #633806;
+  --bg: #FAFAF8;
+  --surface: #FFFFFF;
+  --border: rgba(0,0,0,0.08);
+  --border-strong: rgba(0,0,0,0.15);
+  --text: #1A1A1A;
+  --text-sec: #5F5F5F;
+  --text-tert: #8A8A8A;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
+
+.version-label { max-width: 1200px; margin: 32px auto 12px; padding: 0 24px; }
+.version-label h2 { font-size: 14px; font-weight: 600; color: var(--text-sec); text-transform: uppercase; letter-spacing: 1px; }
+.version-label p { font-size: 14px; color: var(--text-tert); margin-top: 4px; }
+
+/* === ШАПКА === */
+.site-header { background: var(--surface); border-bottom: 1px solid var(--border); }
+.header-top {
+  background: var(--green-bg);
+  font-size: 13px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+.header-top-inner {
+  max-width: 1200px; margin: 0 auto; padding: 0 24px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.top-links { display: flex; gap: 20px; color: var(--text-sec); }
+.top-links a { color: inherit; text-decoration: none; }
+.top-contacts { display: flex; gap: 20px; align-items: center; }
+.top-contacts a { color: var(--text); text-decoration: none; display: flex; align-items: center; gap: 6px; font-weight: 500; }
+.wa-icon { width: 18px; height: 18px; background: #25D366; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: white; font-size: 11px; font-weight: bold; }
+
+.header-main {
+  max-width: 1200px; margin: 0 auto; padding: 18px 24px;
+  display: flex; align-items: center; justify-content: space-between; gap: 32px;
+}
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo-mark { width: 40px; height: 40px; background: var(--green); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 18px; }
+.logo-text { font-weight: 600; font-size: 16px; line-height: 1.1; }
+.logo-text span { display: block; font-size: 11px; font-weight: 400; color: var(--text-sec); letter-spacing: 1px; }
+
+.main-nav { display: flex; gap: 24px; font-size: 14px; }
+.main-nav a { color: var(--text); text-decoration: none; padding: 6px 0; border-bottom: 2px solid transparent; }
+.main-nav a.active { color: var(--green); border-bottom-color: var(--green); }
+.main-nav a:hover { color: var(--green); }
+
+.cta-header { background: var(--green); color: white; padding: 10px 18px; border: none; border-radius: 8px; font-size: 14px; font-weight: 500; cursor: pointer; }
+
+/* === ВЕРСИЯ A === */
+.hero-a {
+  max-width: 1200px; margin: 0 auto; padding: 40px 24px 48px;
+  display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: center;
+}
+.hero-left .badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 14px; background: var(--amber-bg); color: var(--amber-text);
+  border-radius: 100px; font-size: 13px; font-weight: 500; margin-bottom: 18px;
+}
+.hero-left .badge::before { content: "★"; color: #BA7517; }
+.hero-left h1 {
+  font-size: 40px; font-weight: 600; line-height: 1.15; margin-bottom: 16px; letter-spacing: -0.5px;
+}
+.hero-left h1 em { font-style: normal; color: var(--green); }
+.hero-left .lead {
+  font-size: 17px; color: var(--text-sec); line-height: 1.55; margin-bottom: 24px; max-width: 520px;
+}
+.trust-row {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 28px;
+}
+.trust-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+  padding: 12px 10px; text-align: center;
+}
+.trust-value { font-size: 22px; font-weight: 600; color: var(--green); line-height: 1; margin-bottom: 4px; }
+.trust-label { font-size: 11px; color: var(--text-sec); line-height: 1.3; }
+
+.feature-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 20px; margin-bottom: 24px; }
+.feature-list li {
+  font-size: 14px; color: var(--text); padding-left: 24px; position: relative; line-height: 1.4;
+}
+.feature-list li::before {
+  content: "✓"; position: absolute; left: 0; top: 0;
+  color: var(--green); font-weight: 700; font-size: 14px;
+  width: 18px; height: 18px; background: var(--green-light); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.ratings-row {
+  display: flex; align-items: center; gap: 14px;
+  padding-top: 20px; border-top: 1px solid var(--border);
+  font-size: 13px; color: var(--text-sec);
+}
+.ratings-logos { display: flex; gap: 10px; }
+.rating-pill {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 4px 10px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: 100px; font-size: 12px; font-weight: 500;
+}
+.rating-pill b { color: var(--green); }
+
+/* === Форма справа === */
+.hero-form {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+  padding: 28px; box-shadow: 0 10px 40px rgba(15, 110, 86, 0.06);
+  position: relative;
+}
+.form-title { font-size: 20px; font-weight: 600; margin-bottom: 6px; }
+.form-sub { font-size: 13px; color: var(--text-sec); margin-bottom: 20px; }
+.form-group { margin-bottom: 12px; }
+.form-group label { display: block; font-size: 12px; color: var(--text-sec); margin-bottom: 6px; }
+.form-group input, .form-group select {
+  width: 100%; padding: 12px 14px; font-size: 15px;
+  border: 1px solid var(--border-strong); border-radius: 8px; background: var(--surface);
+  font-family: inherit; transition: border-color .15s;
+}
+.form-group input:focus, .form-group select:focus { outline: none; border-color: var(--green); }
+.form-submit {
+  width: 100%; background: var(--green); color: white; border: none;
+  padding: 14px; border-radius: 10px; font-size: 15px; font-weight: 600;
+  cursor: pointer; margin-top: 8px; transition: background .15s;
+}
+.form-submit:hover { background: var(--green-dark); }
+.form-disclaimer { font-size: 11px; color: var(--text-tert); text-align: center; margin-top: 12px; line-height: 1.5; }
+.form-disclaimer a { color: var(--text-sec); }
+.form-perks { display: flex; justify-content: space-between; margin-top: 14px; padding-top: 14px; border-top: 1px dashed var(--border); font-size: 12px; color: var(--text-sec); }
+.form-perks span { display: flex; align-items: center; gap: 4px; }
+.form-perks span::before { content: "●"; color: var(--green); font-size: 8px; }
+
+/* Фото человека — заменитель */
+.photo-placeholder {
+  position: absolute; right: -40px; bottom: -40px; width: 140px; height: 140px;
+  background: linear-gradient(135deg, #E1F5EE 0%, #C8E9D6 100%);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-size: 64px; box-shadow: 0 10px 30px rgba(15, 110, 86, 0.15);
+}
+
+/* === ВЕРСИЯ B === */
+.hero-b {
+  max-width: 1200px; margin: 0 auto; padding: 48px 24px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;
+}
+.hero-b-left .badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 14px; background: var(--green-light); color: var(--green-dark);
+  border-radius: 100px; font-size: 13px; font-weight: 500; margin-bottom: 20px;
+}
+.hero-b-left .badge::before { content: "●"; color: var(--green); }
+.hero-b-left h1 {
+  font-size: 44px; font-weight: 700; line-height: 1.1; margin-bottom: 20px; letter-spacing: -0.8px;
+}
+.hero-b-left .lead { font-size: 18px; color: var(--text-sec); line-height: 1.55; margin-bottom: 32px; }
+.hero-b-left .lead b { color: var(--text); font-weight: 600; }
+.cta-row { display: flex; gap: 12px; margin-bottom: 32px; }
+.btn-primary {
+  background: var(--green); color: white; border: none; padding: 16px 28px;
+  border-radius: 10px; font-size: 15px; font-weight: 600; cursor: pointer;
+}
+.btn-primary:hover { background: var(--green-dark); }
+.btn-secondary {
+  background: transparent; color: var(--green); border: 1.5px solid var(--green);
+  padding: 16px 28px; border-radius: 10px; font-size: 15px; font-weight: 600; cursor: pointer;
+}
+.btn-secondary:hover { background: var(--green-light); }
+
+.stats-bar {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+  padding: 24px; background: var(--green-bg); border-radius: 16px;
+}
+.stat-big { display: flex; flex-direction: column; }
+.stat-big .num { font-size: 32px; font-weight: 700; color: var(--green); line-height: 1; }
+.stat-big .unit { font-size: 13px; color: var(--text-sec); margin-top: 6px; }
+.stat-big + .stat-big { border-left: 1px solid rgba(15,110,86,0.15); padding-left: 24px; }
+
+.hero-b-right {
+  position: relative; background: var(--surface); border-radius: 20px;
+  overflow: hidden; border: 1px solid var(--border);
+  min-height: 460px;
+  box-shadow: 0 20px 60px rgba(15, 110, 86, 0.08);
+}
+.photo-office {
+  height: 280px;
+  background: linear-gradient(135deg, #B8D4C5 0%, #7FAF95 50%, #567D6D 100%);
+  position: relative;
+  display: flex; align-items: flex-end; padding: 24px;
+}
+.photo-office::after {
+  content: "Фото вашего офиса / переговорной комнаты"; position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%); color: rgba(255,255,255,0.7);
+  font-size: 13px; padding: 8px 16px; background: rgba(0,0,0,0.2); border-radius: 6px;
+}
+.photo-caption {
+  background: rgba(255,255,255,0.95); padding: 8px 14px; border-radius: 8px;
+  font-size: 13px; color: var(--text); backdrop-filter: blur(10px);
+  display: flex; align-items: center; gap: 8px; z-index: 1;
+}
+.photo-caption::before { content: "📍"; }
+
+.embedded-form {
+  padding: 24px; background: var(--surface);
+}
+.embedded-form h3 { font-size: 17px; font-weight: 600; margin-bottom: 4px; }
+.embedded-form p { font-size: 13px; color: var(--text-sec); margin-bottom: 14px; }
+.inline-form { display: grid; grid-template-columns: 1fr 1fr auto; gap: 8px; }
+.inline-form input { padding: 12px 14px; border: 1px solid var(--border-strong); border-radius: 8px; font-size: 14px; font-family: inherit; }
+.inline-form input:focus { outline: none; border-color: var(--green); }
+.inline-form button { padding: 12px 20px; background: var(--green); color: white; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.embedded-form .disclaimer { font-size: 11px; color: var(--text-tert); margin-top: 10px; line-height: 1.5; }
+
+/* === Нижняя полоса банков (общая для обеих версий) === */
+.banks-strip {
+  max-width: 1200px; margin: 0 auto 40px; padding: 24px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+}
+.banks-strip-title {
+  text-align: center; font-size: 12px; text-transform: uppercase; color: var(--text-tert);
+  letter-spacing: 2px; margin-bottom: 16px;
+}
+.banks-logos {
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px;
+}
+.bank-logo {
+  font-weight: 600; color: var(--text-tert); font-size: 14px;
+  opacity: 0.75; transition: opacity .2s;
+}
+.bank-logo:hover { opacity: 1; }
+
+.separator { height: 1px; background: var(--border); max-width: 1200px; margin: 60px auto 0; }
+
+@media (max-width: 900px) {
+  .hero-a, .hero-b { grid-template-columns: 1fr; gap: 24px; padding: 24px 16px; }
+  .hero-left h1, .hero-b-left h1 { font-size: 28px; }
+  .main-nav { display: none; }
+  .trust-row { grid-template-columns: repeat(2, 1fr); }
+  .feature-list { grid-template-columns: 1fr; }
+  .inline-form { grid-template-columns: 1fr; }
+  .stats-bar { grid-template-columns: 1fr; gap: 12px; }
+  .stat-big + .stat-big { border-left: none; padding-left: 0; border-top: 1px solid rgba(15,110,86,0.15); padding-top: 12px; }
+  .header-top { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- =========================== -->
+<!-- ШАПКА (общая для обеих)     -->
+<!-- =========================== -->
+<div class="site-header">
+  <div class="header-top">
+    <div class="header-top-inner">
+      <div class="top-links">
+        <a href="#">О компании</a>
+        <a href="#">Отзывы</a>
+        <a href="#">Сертификаты</a>
+        <a href="#">Статьи</a>
+        <a href="#">Контакты</a>
+      </div>
+      <div class="top-contacts">
+        <a href="#"><span class="wa-icon">W</span> WhatsApp</a>
+        <a href="tel:+74957777752">+7 (495) 777-77-52</a>
+        <a href="mailto:info@credit24.ru">info@credit24.ru</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-main">
+    <div class="logo">
+      <div class="logo-mark">К</div>
+      <div class="logo-text">Кредит Консалтинг<span>с 2005 года</span></div>
+    </div>
+    <nav class="main-nav">
+      <a href="#" class="active">Под залог</a>
+      <a href="#">Ипотека</a>
+      <a href="#">Рефинансирование</a>
+      <a href="#">Помощь при отказах</a>
+      <a href="#">Бизнес-кредит</a>
+      <a href="#">Команда</a>
+    </nav>
+    <button class="cta-header">Получить консультацию</button>
+  </div>
+</div>
+
+
+<!-- =========================== -->
+<!-- ВАРИАНТ A                   -->
+<!-- =========================== -->
+<div class="version-label">
+  <h2>Вариант А — Классическая лидогенерационная схема</h2>
+  <p>Форма справа, акцент на выгоды и доверие. Подходит лучше всего для холодного трафика из Яндекс.Директа.</p>
+</div>
+
+<section class="hero-a">
+  <div class="hero-left">
+    <div class="badge">На финансовом рынке Москвы с 2005 года — дольше любого брокера</div>
+
+    <h1>Получите кредит под залог недвижимости, <em>когда банки отказали</em></h1>
+
+    <p class="lead">Работаем с любой кредитной историей — просрочки, МФО, банкротство. 50+ банков-партнёров, решение за 1 день.</p>
+
+    <div class="trust-row">
+      <div class="trust-card">
+        <div class="trust-value">21</div>
+        <div class="trust-label">год на рынке</div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-value">50+</div>
+        <div class="trust-label">банков-партнёров</div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-value">1 день</div>
+        <div class="trust-label">до решения</div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-value">5 000+</div>
+        <div class="trust-label">выданных кредитов</div>
+      </div>
+    </div>
+
+    <ul class="feature-list">
+      <li>Без предоплаты — оплата после получения денег</li>
+      <li>Работаем с просрочками и МФО</li>
+      <li>Сопровождение на всех этапах</li>
+      <li>Бесплатная консультация и анализ КИ</li>
+    </ul>
+
+    <div class="ratings-row">
+      <span>Нам доверяют:</span>
+      <div class="ratings-logos">
+        <span class="rating-pill">Yandex <b>4.8</b></span>
+        <span class="rating-pill">Zoon <b>4.8</b></span>
+        <span class="rating-pill">2ГИС <b>4.7</b></span>
+        <span class="rating-pill">Google <b>4.9</b></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-form">
+    <div class="form-title">Бесплатная консультация</div>
+    <div class="form-sub">Перезвоним за 15 минут и подберём решение</div>
+
+    <div class="form-group">
+      <label>Как к вам обращаться</label>
+      <input type="text" placeholder="Ваше имя" value="">
+    </div>
+    <div class="form-group">
+      <label>Телефон</label>
+      <input type="tel" placeholder="+7 (___) ___-__-__">
+    </div>
+    <div class="form-group">
+      <label>Нужная сумма</label>
+      <select>
+        <option>Выберите сумму</option>
+        <option>до 1 млн ₽</option>
+        <option>1–5 млн ₽</option>
+        <option>5–20 млн ₽</option>
+        <option>20–50 млн ₽</option>
+        <option>более 50 млн ₽</option>
+      </select>
+    </div>
+
+    <button class="form-submit">Получить консультацию →</button>
+
+    <div class="form-perks">
+      <span>Без предоплаты</span>
+      <span>Работаем с любой КИ</span>
+    </div>
+
+    <div class="form-disclaimer">
+      Отправляя заявку, я соглашаюсь с <a href="#">политикой конфиденциальности</a>
+    </div>
+  </div>
+</section>
+
+<!-- Полоса банков-партнёров под первым экраном -->
+<div class="banks-strip">
+  <div class="banks-strip-title">Официальные партнёры 50+ банков</div>
+  <div class="banks-logos">
+    <div class="bank-logo">СБЕР</div>
+    <div class="bank-logo">ВТБ</div>
+    <div class="bank-logo">Альфа-Банк</div>
+    <div class="bank-logo">Совкомбанк</div>
+    <div class="bank-logo">Промсвязьбанк</div>
+    <div class="bank-logo">МТС Банк</div>
+    <div class="bank-logo">Росбанк</div>
+    <div class="bank-logo">Юникредит</div>
+    <div class="bank-logo">Абсолют</div>
+    <div class="bank-logo">БЖФ Банк</div>
+    <div class="bank-logo">+ 40</div>
+  </div>
+</div>
+
+
+<div class="separator"></div>
+
+
+<!-- =========================== -->
+<!-- ВАРИАНТ B                   -->
+<!-- =========================== -->
+<div class="version-label">
+  <h2>Вариант Б — «Человеческий», с фото офиса</h2>
+  <p>Акцент на реальном офисе и команде. Лучше для органического трафика и тех, кто ищет по названию.</p>
+</div>
+
+<section class="hero-b">
+  <div class="hero-b-left">
+    <div class="badge">На рынке Москвы с 2005 года</div>
+
+    <h1>Помогаем получить кредит, когда банки отказали</h1>
+
+    <p class="lead">Специализируемся на <b>кредитах под залог недвижимости</b>. 50+ банков-партнёров, любая кредитная история, решение за 1 день.</p>
+
+    <div class="cta-row">
+      <button class="btn-primary">Получить консультацию</button>
+      <button class="btn-secondary">Проверить КИ бесплатно</button>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat-big">
+        <div class="num">21 год</div>
+        <div class="unit">опыта на финансовом рынке</div>
+      </div>
+      <div class="stat-big">
+        <div class="num">50+</div>
+        <div class="unit">банков-партнёров</div>
+      </div>
+      <div class="stat-big">
+        <div class="num">5 000+</div>
+        <div class="unit">довольных клиентов</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-b-right">
+    <div class="photo-office">
+      <div class="photo-caption">м. Пражская, Кировоградская 22Г</div>
+    </div>
+    <div class="embedded-form">
+      <h3>Позвоним за 15 минут</h3>
+      <p>Бесплатная консультация без предоплаты</p>
+      <div class="inline-form">
+        <input type="text" placeholder="Ваше имя">
+        <input type="tel" placeholder="+7 (___) ___-__-__">
+        <button>Отправить</button>
+      </div>
+      <div class="disclaimer">
+        Нажимая кнопку, я соглашаюсь с <a href="#">политикой конфиденциальности</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div style="max-width: 1200px; margin: 0 auto 60px; padding: 0 24px;">
+  <div style="background: #FFF8E8; border: 1px solid #F0D38A; border-radius: 12px; padding: 20px 24px; font-size: 14px; color: #6B4A00; line-height: 1.6;">
+    <b>📝 Примечания к прототипу:</b><br>
+    • Числа (21 год, 50+, 5 000+, NPS по площадкам) — замените на ваши фактические.<br>
+    • Зелёный круг со смайликом в Варианте А — это место для живой фотографии сотрудника (Вероники Николаевны или Анатолия Владимировича).<br>
+    • Зелёный прямоугольник в Варианте Б — место для реального фото вашего офиса.<br>
+    • Цвет кнопок (#0F6E56) близок к зелёному из вашего логотипа, но более глубокий — выглядит дороже.<br>
+    • Шрифт — системный, можно заменить на Inter или Manrope для премиальности.<br>
+    • Всё адаптивно: сузьте окно браузера, чтобы увидеть мобильный вид.
+  </div>
+</div>
+
+</body>
+</html>
