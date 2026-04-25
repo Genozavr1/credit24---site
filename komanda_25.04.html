@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Команда — кредитные эксперты Кредит Консалтинг | credit24.ru</title>
+<meta name="description" content="Наша команда — 5 экспертов с суммарным стажем 96 лет. Знакомьтесь лично: Овчинников, Евдокимов, Белова, Проценко, Андреева. Прямые контакты каждого.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Serif:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#0F6E56;--green-dark:#0A3D2F;--amber:#C9851C;--ink:#0E1A14;--cream:#F7F4EC;--cream-mid:#EFEBDF;--cream-dark:#E5E0D0;--muted:#5A6B62;--line:rgba(14,26,20,.12);--line-strong:rgba(14,26,20,.2);--shadow-md:0 6px 20px rgba(14,26,20,.08);--shadow-lg:0 16px 40px rgba(14,26,20,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',system-ui,sans-serif;font-size:16px;color:var(--ink);background:var(--cream);line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.container{max-width:1280px;margin:0 auto;padding:0 24px}
+
+.announce{background:var(--green-dark);color:#DDE9E2;font-size:13px;padding:10px 0}
+.announce-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.announce-left{display:flex;gap:22px}
+.announce-right{display:flex;gap:20px;align-items:center}
+.announce-right .tel{font-weight:700;color:#fff}
+.header{background:rgba(247,244,236,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:100}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:32px;height:80px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:44px;height:44px;background:var(--green);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:22px}
+.logo-text b{font-size:19px;font-weight:800;letter-spacing:-.02em;display:block;line-height:1.1}
+.logo-text small{font-size:11px;color:var(--muted)}
+nav.menu{display:flex;gap:4px;flex:1;justify-content:center}
+.menu>a{padding:10px 14px;font-size:14.5px;font-weight:600;border-radius:8px}
+.menu>a:hover{background:var(--cream-mid)}
+.menu>a.active{color:var(--green)}
+.cta-top{background:var(--green);color:#fff;padding:12px 22px;border-radius:8px;font-weight:700;font-size:14.5px}
+
+/* BREADCRUMBS + INTRO */
+.breadcrumbs{padding:18px 0;font-size:13px;color:var(--muted);background:var(--cream-mid);border-bottom:1px solid var(--line)}
+.breadcrumbs a{color:var(--green)}
+.breadcrumbs span{margin:0 8px}
+
+.team-intro{padding:64px 0 48px;background:var(--cream-mid);position:relative;overflow:hidden}
+.team-intro::before{content:"";position:absolute;right:-150px;top:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(15,110,86,.06) 0%,transparent 60%);pointer-events:none}
+.intro-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:center;position:relative;z-index:1}
+.intro-kicker{display:inline-block;font-size:12px;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.1em;margin-bottom:14px}
+.intro-h1{font-size:54px;font-weight:700;line-height:1.05;letter-spacing:-.025em;margin-bottom:22px}
+.intro-h1 em{font-family:'IBM Plex Serif',serif;font-style:italic;font-weight:400;color:var(--green)}
+.intro-lead{font-size:18px;color:var(--muted);line-height:1.55;margin-bottom:28px;max-width:560px}
+
+.team-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.ts-card{background:var(--cream);border:1px solid var(--line);padding:20px 16px;border-radius:12px}
+.ts-card b{font-size:32px;font-weight:800;letter-spacing:-.02em;line-height:1;display:block}
+.ts-card b em{font-family:'IBM Plex Serif',serif;font-style:italic;font-weight:400;color:var(--green);font-size:18px}
+.ts-card span{font-size:12px;color:var(--muted);margin-top:6px;display:block;font-weight:500}
+
+.intro-photo{aspect-ratio:1/1;background:linear-gradient(135deg,#2B4A3D 0%,#1A2F26 100%);border-radius:18px;box-shadow:var(--shadow-lg);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.4);text-align:center;padding:40px}
+.intro-photo em{font-family:'IBM Plex Serif',serif;font-style:italic;font-size:18px;color:rgba(255,255,255,.6);display:block;margin-bottom:8px}
+
+/* TEAM CARDS — БОЛЬШИЕ КАРТОЧКИ */
+section{padding:80px 0}
+.team-section{background:var(--cream)}
+.section-head{margin-bottom:48px;max-width:780px}
+.kicker{display:inline-block;font-size:12px;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px}
+h2{font-size:40px;font-weight:700;line-height:1.1;letter-spacing:-.02em;margin-bottom:14px}
+h2 em{font-family:'IBM Plex Serif',serif;font-style:italic;font-weight:400;color:var(--green)}
+.section-head p{font-size:17px;color:var(--muted);max-width:660px}
+
+.tm-list{display:flex;flex-direction:column;gap:32px}
+.tm-card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;display:grid;grid-template-columns:340px 1fr;box-shadow:var(--shadow-md)}
+.tm-card:nth-child(even){grid-template-columns:1fr 340px}
+.tm-card:nth-child(even) .tm-photo{order:2}
+
+.tm-photo{aspect-ratio:4/5;background:linear-gradient(135deg,#2B4A3D 0%,#1A2F26 100%);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.3);position:relative;flex-direction:column;padding:30px;text-align:center}
+.tm-photo svg{width:60px;height:60px;margin-bottom:10px}
+.tm-photo em{font-family:'IBM Plex Serif',serif;font-style:italic;font-size:13px;color:rgba(255,255,255,.5)}
+
+.tm-rank{position:absolute;top:18px;left:18px;width:36px;height:36px;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;z-index:2}
+
+.tm-info{padding:38px 40px;display:flex;flex-direction:column}
+.tm-name{font-size:30px;font-weight:700;line-height:1.15;letter-spacing:-.02em;margin-bottom:6px}
+.tm-role{font-size:15px;color:var(--muted);font-weight:600;margin-bottom:20px}
+.tm-quote{font-family:'IBM Plex Serif',serif;font-style:italic;font-size:18px;line-height:1.5;color:var(--ink);padding-left:18px;border-left:3px solid var(--amber);margin-bottom:24px}
+.tm-bio{font-size:14.5px;color:var(--muted);line-height:1.6;margin-bottom:24px}
+.tm-specialty{margin-bottom:24px}
+.tm-specialty h4{font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--green);margin-bottom:10px}
+.tm-tags{display:flex;flex-wrap:wrap;gap:6px}
+.tm-tag{padding:5px 11px;background:var(--cream-mid);font-size:12.5px;font-weight:600;border-radius:4px;color:var(--ink)}
+
+.tm-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px;padding:18px;background:var(--cream-mid);border-radius:10px}
+.tm-metric b{font-size:22px;font-weight:800;letter-spacing:-.01em;line-height:1;display:block}
+.tm-metric span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;font-weight:600;display:block;margin-top:4px}
+
+.tm-contacts{display:flex;gap:10px;margin-top:auto;padding-top:20px;border-top:1px solid var(--line);align-items:center;flex-wrap:wrap}
+.tm-contacts .lbl{font-size:12.5px;color:var(--muted);font-weight:600;margin-right:6px}
+.tm-contacts a{width:42px;height:42px;border-radius:50%;border:1px solid var(--line-strong);display:flex;align-items:center;justify-content:center;color:var(--ink);transition:all .2s}
+.tm-contacts a:hover{background:var(--green);color:#fff;border-color:var(--green)}
+.tm-contacts svg{width:17px;height:17px}
+.tm-contacts .tel-link{width:auto;border-radius:21px;padding:0 16px;font-weight:700;font-size:13.5px;gap:6px}
+
+/* VALUES BLOCK */
+.values{background:var(--ink);color:#fff}
+.values h2{color:#fff}
+.values .kicker{color:var(--amber)}
+.values .section-head p{color:rgba(255,255,255,.65)}
+.val-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:12px}
+.val-card{padding-top:24px;border-top:2px solid rgba(255,255,255,.12)}
+.val-num{font-family:'IBM Plex Serif',serif;font-size:13px;color:var(--amber);letter-spacing:.08em;display:block;margin-bottom:18px}
+.val-card h3{font-size:22px;font-weight:700;margin-bottom:12px;line-height:1.25}
+.val-card p{color:rgba(255,255,255,.7);font-size:14.5px;line-height:1.6}
+
+/* FINAL CTA */
+.final-cta{background:linear-gradient(135deg,var(--green-dark) 0%,var(--green) 100%);color:#fff;padding:88px 0}
+.fc-wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+.fc-wrap h2{color:#fff;font-size:42px}
+.fc-wrap h2 em{color:var(--amber)}
+.fc-wrap p{color:rgba(255,255,255,.75);font-size:17px;margin-bottom:20px}
+.fc-form{background:rgba(255,255,255,.06);backdrop-filter:blur(10px);padding:32px;border-radius:14px;border:1px solid rgba(255,255,255,.12)}
+.fc-form input{width:100%;padding:14px 16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:10px;color:#fff;font-size:15px;margin-bottom:10px;font-family:inherit}
+.fc-form input::placeholder{color:rgba(255,255,255,.45)}
+.fc-form button{width:100%;padding:14px;background:var(--amber);color:#fff;border:0;border-radius:10px;font-weight:700;font-size:15px;cursor:pointer;font-family:inherit}
+
+footer{background:var(--green-dark);color:#DDE9E2;padding:56px 0 24px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:48px;margin-bottom:40px}
+.foot-col h4{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px;color:#fff}
+.foot-col ul{list-style:none}
+.foot-col li{margin-bottom:9px}
+.foot-col a{font-size:13.5px;color:rgba(221,233,226,.7)}
+.foot-bottom{padding-top:20px;border-top:1px solid rgba(255,255,255,.1);font-size:11.5px;color:rgba(221,233,226,.55);line-height:1.55}
+.foot-bottom a{color:rgba(221,233,226,.75);text-decoration:underline}
+
+@media (max-width:1100px){
+  .intro-grid{grid-template-columns:1fr;gap:40px}
+  .tm-card,.tm-card:nth-child(even){grid-template-columns:1fr}
+  .tm-card:nth-child(even) .tm-photo{order:0}
+  .tm-photo{aspect-ratio:16/9;max-height:300px}
+  .val-grid{grid-template-columns:1fr;gap:32px}
+  .team-stats{grid-template-columns:repeat(2,1fr)}
+  .fc-wrap{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:700px){
+  .menu{display:none}
+  .intro-h1{font-size:36px}
+  h2{font-size:28px}
+  .tm-info{padding:24px}
+  .tm-name{font-size:22px}
+  .tm-metrics{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  section{padding:56px 0}
+}
+</style>
+</head>
+<body>
+
+<div class="announce"><div class="container announce-inner">
+  <div class="announce-left"><span>Работаем с любой КИ</span><span>Без предоплаты</span><span>Пн–Пт 9:00–20:00</span></div>
+  <div class="announce-right"><a href="https://wa.me/74957777752">WhatsApp</a><a href="tel:+74957777752" class="tel">+7 (495) 777-77-52</a></div>
+</div></div>
+
+<header class="header"><div class="container header-inner">
+  <a href="/" class="logo"><div class="logo-mark">К</div><div class="logo-text"><b>Кредит Консалтинг</b><small>credit24.ru · с 2005 года</small></div></a>
+  <nav class="menu">
+    <a href="/pomosch-v-kredite/">Помощь в кредите</a>
+    <a href="/kredit-pod-zalog/">Под залог</a>
+    <a href="/refinansirovanie/">Перезалог</a>
+    <a href="/pomosch-v-ipoteke/">Ипотека</a>
+    <a href="/about/" class="active">О нас</a>
+    <a href="/kontakty/">Контакты</a>
+  </nav>
+  <a href="#cta-final" class="cta-top">Консультация</a>
+</div></header>
+
+<div class="breadcrumbs"><div class="container">
+  <a href="/">Главная</a><span>·</span><a href="/about/">О компании</a><span>·</span>Команда
+</div></div>
+
+<!-- INTRO -->
+<section class="team-intro">
+  <div class="container">
+    <div class="intro-grid">
+      <div>
+        <span class="intro-kicker">Наша команда</span>
+        <h1 class="intro-h1">Пять <em>экспертов</em>, которые знают свою работу</h1>
+        <p class="intro-lead">Каждый сотрудник работает с клиентом лично — от первого звонка до получения денег. Никаких кол-центров, никаких автоответчиков. Звоните напрямую тому, кто ведёт вашу сделку.</p>
+        <div class="team-stats">
+          <div class="ts-card"><b>5</b><span>экспертов в команде</span></div>
+          <div class="ts-card"><b>96<em>лет</em></b><span>суммарный стаж</span></div>
+          <div class="ts-card"><b>5000<em>+</em></b><span>проведённых сделок</span></div>
+          <div class="ts-card"><b>9.6<em>/10</em></b><span>NPS клиентов</span></div>
+        </div>
+      </div>
+      <div class="intro-photo">
+        <div>
+          <em>Групповое фото команды</em>
+          <span style="font-size:12px;color:rgba(255,255,255,.4)">Общий план в офисе на Кировоградской · 1:1</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM CARDS -->
+<section class="team-section">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Знакомьтесь лично</div>
+      <h2>Кто <em>будет вести</em> вашу сделку</h2>
+      <p>В порядке количества проведённых сделок за последний месяц. У каждого — прямой телефон, WhatsApp и Telegram. Можете сразу написать тому, чья специализация ближе вашей ситуации.</p>
+    </div>
+
+    <div class="tm-list">
+
+      <!-- 1. Овчинников -->
+      <div class="tm-card">
+        <div class="tm-photo">
+          <span class="tm-rank">1</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          <em>Геннадий Овчинников</em>
+        </div>
+        <div class="tm-info">
+          <div class="tm-name">Овчинников Геннадий Викторович</div>
+          <div class="tm-role">Заместитель директора</div>
+          <blockquote class="tm-quote">Банки смотрят на цифры. Я — на ситуацию. Поэтому помогаю там, где отказали.</blockquote>
+          <p class="tm-bio">Двадцать лет в кредитовании. Начинал андеррайтером в Альфа-Банке, прошёл путь до руководителя залогового направления в крупном брокере. С 2010 года — в «Кредит Консалтинг». Лично провёл больше 1 200 сделок. Среди клиентов — те, кому отказали 4–5 банков.</p>
+          <div class="tm-specialty">
+            <h4>Специализация</h4>
+            <div class="tm-tags">
+              <span class="tm-tag">Залог квартиры</span>
+              <span class="tm-tag">Сложная КИ</span>
+              <span class="tm-tag">Перезалог</span>
+              <span class="tm-tag">Крупные суммы (от 5 млн)</span>
+            </div>
+          </div>
+          <div class="tm-metrics">
+            <div class="tm-metric"><b>54</b><span>сделок/мес</span></div>
+            <div class="tm-metric"><b>20 лет</b><span>опыт работы</span></div>
+            <div class="tm-metric"><b>9.8/10</b><span>NPS клиентов</span></div>
+          </div>
+          <div class="tm-contacts">
+            <span class="lbl">Связаться напрямую:</span>
+            <a href="tel:+74957777752" class="tel-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>Позвонить</a>
+            <a href="https://wa.me/74957777752" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.101 1.513 5.831L0 24l6.335-1.666A11.938 11.938 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a>
+            <a href="https://t.me/credit24" title="Telegram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12 12-5.373 12-12S18.626 0 12 0zm5.568 8.16l-1.85 8.72c-.14.62-.51.77-1.03.48l-2.85-2.1-1.37 1.32c-.15.15-.28.28-.57.28l.2-2.9 5.31-4.79c.23-.2-.05-.32-.35-.12l-6.56 4.13-2.83-.88c-.61-.19-.63-.61.13-.91l11.07-4.27c.51-.18.96.12.79.85z"/></svg></a>
+            <a href="mailto:ovchinnikov@credit24.ru" title="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Евдокимов -->
+      <div class="tm-card">
+        <div class="tm-photo">
+          <span class="tm-rank">2</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          <em>Анатолий Евдокимов</em>
+        </div>
+        <div class="tm-info">
+          <div class="tm-name">Евдокимов Анатолий Владимирович</div>
+          <div class="tm-role">Ведущий специалист</div>
+          <blockquote class="tm-quote">За 28 лет видел всё. И есть простое правило: не бывает безнадёжных ситуаций — бывают неправильно подобранные банки.</blockquote>
+          <p class="tm-bio">Самый опытный сотрудник команды. Работал в Сбербанке, ВТБ, Россельхозбанке — знает изнутри, как принимаются решения по заявкам. Специализируется на нестандартных случаях: пенсионеры, серый доход, отказы в большинстве банков. Ведёт около 47 сделок в месяц.</p>
+          <div class="tm-specialty">
+            <h4>Специализация</h4>
+            <div class="tm-tags">
+              <span class="tm-tag">Пенсионеры</span>
+              <span class="tm-tag">Серый доход</span>
+              <span class="tm-tag">Залог дома</span>
+              <span class="tm-tag">Самозанятые</span>
+            </div>
+          </div>
+          <div class="tm-metrics">
+            <div class="tm-metric"><b>47</b><span>сделок/мес</span></div>
+            <div class="tm-metric"><b>28 лет</b><span>опыт работы</span></div>
+            <div class="tm-metric"><b>9.7/10</b><span>NPS клиентов</span></div>
+          </div>
+          <div class="tm-contacts">
+            <span class="lbl">Связаться напрямую:</span>
+            <a href="tel:+74957777752" class="tel-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2"/></svg>Позвонить</a>
+            <a href="https://wa.me/74957777752" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.101 1.513 5.831L0 24l6.335-1.666A11.938 11.938 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a>
+            <a href="https://t.me/credit24" title="Telegram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12 12-5.373 12-12S18.626 0 12 0z"/></svg></a>
+            <a href="mailto:evdokimov@credit24.ru" title="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Белова -->
+      <div class="tm-card">
+        <div class="tm-photo">
+          <span class="tm-rank">3</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          <em>Ирина Белова</em>
+        </div>
+        <div class="tm-info">
+          <div class="tm-name">Белова Ирина Евгеньевна</div>
+          <div class="tm-role">Специалист-андеррайтер</div>
+          <blockquote class="tm-quote">Моя задача — увидеть в вашей анкете то, что банк точно одобрит. И помочь это правильно показать.</blockquote>
+          <p class="tm-bio">Бывший андеррайтер банка «Открытие» с 15-летним стажем. Знает критерии оценки заёмщика изнутри — какие документы добавить, как объяснить просрочки, как «упаковать» доход. Незаменима в сложных случаях, где нужно тонко подойти к подаче заявки.</p>
+          <div class="tm-specialty">
+            <h4>Специализация</h4>
+            <div class="tm-tags">
+              <span class="tm-tag">Плохая КИ</span>
+              <span class="tm-tag">Просрочки</span>
+              <span class="tm-tag">Объяснительные письма</span>
+              <span class="tm-tag">Подготовка анкет</span>
+            </div>
+          </div>
+          <div class="tm-metrics">
+            <div class="tm-metric"><b>42</b><span>сделок/мес</span></div>
+            <div class="tm-metric"><b>15 лет</b><span>опыт работы</span></div>
+            <div class="tm-metric"><b>9.6/10</b><span>NPS клиентов</span></div>
+          </div>
+          <div class="tm-contacts">
+            <span class="lbl">Связаться напрямую:</span>
+            <a href="tel:+74957777752" class="tel-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2"/></svg>Позвонить</a>
+            <a href="https://wa.me/74957777752" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.101 1.513 5.831L0 24l6.335-1.666A11.938 11.938 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a>
+            <a href="https://t.me/credit24" title="Telegram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12 12-5.373 12-12S18.626 0 12 0z"/></svg></a>
+            <a href="mailto:belova@credit24.ru" title="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Проценко -->
+      <div class="tm-card">
+        <div class="tm-photo">
+          <span class="tm-rank">4</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          <em>Сергей Проценко</em>
+        </div>
+        <div class="tm-info">
+          <div class="tm-name">Проценко Сергей Валерьевич</div>
+          <div class="tm-role">Специалист отдела</div>
+          <blockquote class="tm-quote">Лучшая ставка — это не та, что в рекламе. Лучшая — та, под которую вас одобрят. Над этим я и работаю.</blockquote>
+          <p class="tm-bio">Эксперт по подбору программ под нестандартные ситуации. Специализируется на ипотечных программах с использованием маткапитала, рефинансировании и сложных схемах с несколькими банками одновременно. Прямые контакты с андеррайтерами в 30+ банков Москвы.</p>
+          <div class="tm-specialty">
+            <h4>Специализация</h4>
+            <div class="tm-tags">
+              <span class="tm-tag">Ипотека</span>
+              <span class="tm-tag">Маткапитал</span>
+              <span class="tm-tag">Рефинансирование</span>
+              <span class="tm-tag">Параллельная подача</span>
+            </div>
+          </div>
+          <div class="tm-metrics">
+            <div class="tm-metric"><b>38</b><span>сделок/мес</span></div>
+            <div class="tm-metric"><b>12 лет</b><span>опыт работы</span></div>
+            <div class="tm-metric"><b>9.5/10</b><span>NPS клиентов</span></div>
+          </div>
+          <div class="tm-contacts">
+            <span class="lbl">Связаться напрямую:</span>
+            <a href="tel:+74957777752" class="tel-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2"/></svg>Позвонить</a>
+            <a href="https://wa.me/74957777752" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.101 1.513 5.831L0 24l6.335-1.666A11.938 11.938 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a>
+            <a href="https://t.me/credit24" title="Telegram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12 12-5.373 12-12S18.626 0 12 0z"/></svg></a>
+            <a href="mailto:procenko@credit24.ru" title="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Андреева -->
+      <div class="tm-card">
+        <div class="tm-photo">
+          <span class="tm-rank">5</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          <em>Вероника Андреева</em>
+        </div>
+        <div class="tm-info">
+          <div class="tm-name">Андреева Вероника Николаевна</div>
+          <div class="tm-role">Генеральный директор</div>
+          <blockquote class="tm-quote">Я в этом бизнесе с момента, когда брокеров на рынке Москвы было меньше десяти. И я всё ещё лично веду сделки — потому что без этого теряется чувство клиента.</blockquote>
+          <p class="tm-bio">Основатель и владелец компании. С 2005 года выстроила «Кредит Консалтинг» с нуля до одного из самых давних брокеров на московском рынке. Сейчас занимается стратегией, партнёрскими отношениями с банками и лично ведёт VIP-сделки от 20 млн ₽.</p>
+          <div class="tm-specialty">
+            <h4>Специализация</h4>
+            <div class="tm-tags">
+              <span class="tm-tag">VIP-сделки от 20 млн</span>
+              <span class="tm-tag">Стратегические партнёрства</span>
+              <span class="tm-tag">Сложные переговоры</span>
+              <span class="tm-tag">Частные инвесторы</span>
+            </div>
+          </div>
+          <div class="tm-metrics">
+            <div class="tm-metric"><b>35</b><span>сделок/мес</span></div>
+            <div class="tm-metric"><b>21 год</b><span>опыт работы</span></div>
+            <div class="tm-metric"><b>9.9/10</b><span>NPS клиентов</span></div>
+          </div>
+          <div class="tm-contacts">
+            <span class="lbl">Связаться напрямую:</span>
+            <a href="tel:+74957777752" class="tel-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2"/></svg>Позвонить</a>
+            <a href="https://wa.me/74957777752" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.101 1.513 5.831L0 24l6.335-1.666A11.938 11.938 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a>
+            <a href="https://t.me/credit24" title="Telegram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12 12-5.373 12-12S18.626 0 12 0z"/></svg></a>
+            <a href="mailto:andreeva@credit24.ru" title="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="values">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Принципы команды</div>
+      <h2>Чем мы <em>отличаемся</em> от обычных брокеров</h2>
+      <p>Если коротко — за 21 год работы на рынке мы построили компанию, в которой каждый сотрудник работает по принципам, которые мы сформулировали в начале и не нарушали ни разу.</p>
+    </div>
+    <div class="val-grid">
+      <div class="val-card">
+        <span class="val-num">I.</span>
+        <h3>Никогда не берём предоплату</h3>
+        <p>Комиссия только после получения денег клиентом на счёт. Если кредит не одобрили — вы не должны нам ничего, даже за консультации и подачу документов.</p>
+      </div>
+      <div class="val-card">
+        <span class="val-num">II.</span>
+        <h3>Сделку ведёт один человек</h3>
+        <p>Никаких передач между менеджерами. Тот, кто принял ваш звонок, доводит сделку до получения денег. У него ваш номер, у вас — его.</p>
+      </div>
+      <div class="val-card">
+        <span class="val-num">III.</span>
+        <h3>Говорим прямо</h3>
+        <p>Если вашу заявку нельзя одобрить — скажем это сразу. Не будем тратить ваше время и деньги на бесконечные подачи в разные банки ради своей комиссии.</p>
+      </div>
+      <div class="val-card">
+        <span class="val-num">IV.</span>
+        <h3>Без шаблонов</h3>
+        <p>Каждая сделка разбирается индивидуально. Не используем «универсальные» схемы — банки давно научились их распознавать. Только живой разбор вашей ситуации.</p>
+      </div>
+      <div class="val-card">
+        <span class="val-num">V.</span>
+        <h3>Только белые схемы</h3>
+        <p>Никакого «чёрного брокериджа». Не подделываем справки 2-НДФЛ, не покупаем документы, не работаем с поддельными договорами. Только легальные методы.</p>
+      </div>
+      <div class="val-card">
+        <span class="val-num">VI.</span>
+        <h3>Сопровождаем после сделки</h3>
+        <p>Если у вас возникают вопросы по графику платежей, страховке или досрочному погашению — мы остаёмся на связи. Не бросаем после получения комиссии.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta" id="cta-final">
+  <div class="container">
+    <div class="fc-wrap">
+      <div>
+        <div class="kicker" style="color:var(--amber)">Связь с командой</div>
+        <h2>Хотите, чтобы вашу сделку <em>вёл лично</em> один из них?</h2>
+        <p>Оставьте номер — мы перезвоним и подберём специалиста под вашу ситуацию. Или позвоните напрямую тому, чья специализация ближе.</p>
+        <p style="color:rgba(255,255,255,.9);font-size:15px">Звонок по Москве — <b>бесплатно</b>. Консультация бесплатна и ни к чему не обязывает.</p>
+      </div>
+      <form class="fc-form" onsubmit="event.preventDefault();alert('Демо: заявка отправлена')">
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="tel" placeholder="+7 (___) ___-__-__" required>
+        <input type="text" placeholder="Кратко о ситуации (необязательно)">
+        <button type="submit">Связаться с командой →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer><div class="container">
+  <div class="foot-grid">
+    <div class="foot-col">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px"><div class="logo-mark" style="background:var(--cream);color:var(--green)">К</div><b style="color:#fff;font-size:17px">Кредит Консалтинг</b></div>
+      <p style="font-size:13.5px;line-height:1.6;color:rgba(221,233,226,.7);margin-bottom:14px">г. Москва, ул. Кировоградская, 22Г</p>
+      <a href="tel:+74957777752" style="display:block;font-weight:700;color:#fff">+7 (495) 777-77-52</a>
+    </div>
+    <div class="foot-col"><h4>Услуги</h4><ul>
+      <li><a href="/pomosch-v-kredite/">Помощь в получении кредита</a></li>
+      <li><a href="/kredit-pod-zalog-kvartiry-v-moskve/">Под залог квартиры</a></li>
+      <li><a href="/refinansirovanie/">Перезалог</a></li>
+      <li><a href="/pomosch-v-ipoteke/">Ипотека</a></li>
+    </ul></div>
+    <div class="foot-col"><h4>Сервисы</h4><ul>
+      <li><a href="/proverka-ki/">Проверка КИ</a></li>
+      <li><a href="/kalkulyator/">Калькулятор</a></li>
+      <li><a href="/dokumenty/">Документы</a></li>
+      <li><a href="/agentam/">Агентам</a></li>
+    </ul></div>
+    <div class="foot-col"><h4>Компания</h4><ul>
+      <li><a href="/about/">О нас</a></li>
+      <li><a href="/komanda/">Команда</a></li>
+      <li><a href="/cases/">Истории клиентов</a></li>
+      <li><a href="/sertifikaty/">Сертификаты</a></li>
+      <li><a href="/otzyvy/">Отзывы</a></li>
+      <li><a href="/kontakty/">Контакты</a></li>
+    </ul></div>
+  </div>
+  <div class="foot-bottom"><p>© 2005–2026 · ООО «Кредит Консалтинг» · ИНН 7723776013 · ОГРН 1107746891339. <a href="/privacy-policy/">Политика конфиденциальности</a></p></div>
+</div></footer>
+
+</body>
+</html>

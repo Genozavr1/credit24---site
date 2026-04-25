@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Помощь в получении кредита в Москве — Кредит Консалтинг с 2005 года | credit24.ru</title>
+<meta name="description" content="Помогаем получить кредит, когда банки отказали. 21 год опыта, 50+ банков-партнёров. Подбираем оптимальный вариант — от потребительского до залогового. Без предоплаты.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Serif:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#0F6E56;--green-dark:#0A3D2F;--amber:#C9851C;--amber-soft:#D8972F;
+  --ink:#0E1A14;--cream:#F7F4EC;--cream-mid:#EFEBDF;--cream-dark:#E5E0D0;
+  --muted:#5A6B62;--line:rgba(14,26,20,.12);--line-strong:rgba(14,26,20,.2);
+  --shadow-sm:0 1px 2px rgba(14,26,20,.05);--shadow-md:0 6px 20px rgba(14,26,20,.08);--shadow-lg:0 16px 40px rgba(14,26,20,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',system-ui,sans-serif;font-size:16px;color:var(--ink);background:var(--cream);line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{max-width:1280px;margin:0 auto;padding:0 24px}
+
+/* HEADER */
+.announce{background:var(--green-dark);color:#DDE9E2;font-size:13px;padding:10px 0}
+.announce-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.announce-left{display:flex;gap:22px}
+.announce-left span{display:flex;align-items:center;gap:7px}
+.announce-right{display:flex;gap:20px;align-items:center}
+.announce-right .tel{font-weight:700;color:#fff;font-size:14px}
+.header{background:rgba(247,244,236,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:100}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:32px;height:80px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:44px;height:44px;background:var(--green);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:22px}
+.logo-text b{font-size:19px;font-weight:800;letter-spacing:-.02em;display:block;line-height:1.1}
+.logo-text small{font-size:11px;color:var(--muted);font-weight:500}
+nav.menu{display:flex;gap:4px;flex:1;justify-content:center}
+.menu>a,.menu-item>a{padding:10px 14px;font-size:14.5px;font-weight:600;border-radius:8px;cursor:pointer;display:flex;align-items:center;gap:6px}
+.menu>a:hover,.menu-item>a:hover{background:var(--cream-mid)}
+.menu-item{position:relative}
+.menu-item>a::after{content:"";width:0;height:0;border-left:3.5px solid transparent;border-right:3.5px solid transparent;border-top:4px solid currentColor;opacity:.5;margin-left:3px}
+.dropdown{position:absolute;top:calc(100% + 4px);left:50%;transform:translateX(-50%);min-width:280px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow-lg);padding:8px;display:none}
+.menu-item:hover .dropdown{display:block}
+.dropdown a{display:block;padding:10px 14px;font-size:14px;border-radius:8px}
+.dropdown a:hover{background:var(--cream-mid)}
+.dropdown a.star{font-weight:700;color:var(--green)}
+.dropdown hr{border:0;border-top:1px solid var(--line);margin:6px 8px}
+.cta-top{background:var(--green);color:#fff;padding:12px 22px;border-radius:8px;font-weight:700;font-size:14.5px;display:flex;align-items:center;gap:8px}
+.cta-top:hover{background:#0D5D48}
+
+/* HERO — про помощь, не про залог */
+.hero{padding:64px 0 80px;background:linear-gradient(180deg,var(--cream) 0%,var(--cream-mid) 100%);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-200px;top:-100px;width:600px;height:600px;background:radial-gradient(circle,rgba(201,133,28,.07) 0%,transparent 60%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center;position:relative}
+.badge-year{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;background:var(--cream);border:1px solid var(--line);border-radius:100px;font-size:12.5px;font-weight:600;margin-bottom:22px}
+.badge-year .dot{width:6px;height:6px;border-radius:50%;background:var(--green)}
+.hero h1{font-size:56px;font-weight:700;line-height:1.06;letter-spacing:-.025em;margin-bottom:22px}
+.hero h1 em{font-family:'IBM Plex Serif',serif;font-style:italic;font-weight:400;color:var(--green)}
+.hero-sub{font-size:19px;color:var(--muted);margin-bottom:32px;max-width:560px;line-height:1.55}
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:28px}
+.stat-card{background:var(--cream);border:1px solid var(--line);padding:18px 14px;border-radius:12px}
+.stat-card .num{font-size:28px;font-weight:800;letter-spacing:-.02em;line-height:1}
+.stat-card .num em{font-family:'IBM Plex Serif',serif;font-style:italic;font-weight:400;color:var(--green);font-size:18px;margin-left:2px}
+.stat-card .lbl{font-size:12px;color:var(--muted);margin-top:6px;font-weight:500}
+.rating-bar{display:flex;gap:20px;align-items:center;padding:14px 18px;background:var(--cream);border:1px solid var(--line);border-radius:12px;flex-wrap:wrap}
+.rating-item{display:flex;gap:8px;align-items:center;font-size:13px}
+.rating-item b{font-size:15px;font-weight:700}
+.rating-item .stars{color:var(--amber);letter-spacing:.5px;font-size:12px}
+.rating-item .plat{font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+
+.hero-right{position:relative}
+.photo-box{position:relative;width:100%;aspect-ratio:4/5;background:linear-gradient(135deg,#2B4A3D 0%,#1A2F26 100%);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-lg)}
+.photo-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:rgba(255,255,255,.4);text-align:center;padding:40px;font-size:13px;line-height:1.6}
+.photo-placeholder svg{width:80px;height:80px;margin-bottom:12px;opacity:.3}
+.photo-placeholder em{font-family:'IBM Plex Serif',serif;font-style:italic;font-size:17px;color:rgba(255,255,255,.6);display:block;margin-bottom:8px}
+.quote-overlay{position:absolute;top:50px;right:24px;width:280px;background:rgba(247,244,236,.96);backdrop-filter:blur(8px);padding:20px 22px;border-radius:12px;font-family:'IBM Plex Serif',serif;font-style:italic;font-size:16px;line-height:1.4;box-shadow:var(--shadow-md)}
+.quote-overlay::before{content:"\201C";position:absolute;top:-6px;left:14px;font-size:58px;color:var(--green);font-family:serif;line-height:1}
+.hero-form{position:absolute;left:24px;bottom:24px;width:calc(100% - 48px);max-width:340px;background:var(--ink);color:#fff;padding:22px;border-radius:14px;box-shadow:var(--shadow-lg)}
+.hero-form h3{font-size:16px;font-weight:700;margin-bottom:4px}
+.hero-form p{font-size:12.5px;color:rgba(255,255,255,.65);margin-bottom:16px}
+.hero-form input{width:100%;padding:11px 14px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);border-radius:8px;color:#fff;font-size:14px;font-family:inherit;margin-bottom:8px}
+.hero-form input::placeholder{color:rgba(255,255,255,.4)}
+.hero-form button{width:100%;padding:12px;background:var(--amber);color:#fff;border:0;border-radius:8px;font-weight:700;font-size:14px;cursor:pointer;font-family:inherit}
+.hero-form .consent{font-size:10.5px;color:rgba(255,255,255,.5);margin-top:10px;line-height:1.4}
+
+/* SECTIONS */
+section{padding:80px 0}
+.section-head{margin-bottom:48px;max-width:780px}
+.kicker{display:inline-block;font-size:12px;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px}
+h2{font-size:42px;font-weight:700;line-height:1.1;letter-spacing:-.02em;margin-bottom:14px}
+h2 em{font-family:'IBM Plex Serif',serif;font-style:italic;font-weight:400;color:var(--green)}
+.section-head p{font-size:17px;color:var(--muted);max-width:660px}
+
+/* ===== БЛОК 1: СКОЛЬКО ВАМ НУЖНО (ползунок-сегментатор) ===== */
+.amount-segmenter{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.seg-wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:center}
+.seg-left h2{font-size:36px}
+.seg-left p{font-size:16px;color:var(--muted);margin-bottom:20px}
+.seg-right{background:var(--cream-mid);padding:36px;border-radius:18px}
+.seg-slider-wrap{margin-bottom:24px}
+.seg-slider-wrap label{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px;font-size:14px;color:var(--muted)}
+.seg-slider-wrap label b{font-size:32px;font-weight:800;color:var(--ink);letter-spacing:-.02em}
+.seg-slider-wrap input[type=range]{width:100%;height:8px;appearance:none;-webkit-appearance:none;background:var(--cream-dark);border-radius:4px;outline:none}
+.seg-slider-wrap input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;border-radius:50%;background:var(--green);cursor:pointer;border:4px solid var(--cream);box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.seg-slider-wrap .ticks{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-top:8px;font-weight:600}
+.seg-result{background:var(--cream);padding:22px;border-radius:12px;border-left:4px solid var(--green);transition:all .3s}
+.seg-result .seg-tag{font-size:11px;font-weight:800;color:var(--green);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+.seg-result h4{font-size:18px;font-weight:700;margin-bottom:8px;line-height:1.3}
+.seg-result p{font-size:14px;color:var(--muted);line-height:1.55;margin-bottom:14px}
+.seg-result .seg-link{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:700;color:var(--green)}
+
+/* ===== БЛОК 2: ПОЧЕМУ ОТКАЗЫВАЮТ ===== */
+.why-deny{background:var(--cream-mid)}
+.wd-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.wd-card{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:26px}
+.wd-num{font-family:'IBM Plex Serif',serif;font-size:13px;color:var(--amber);font-weight:500;letter-spacing:.08em;margin-bottom:12px}
+.wd-card h3{font-size:18px;font-weight:700;margin-bottom:10px;line-height:1.3}
+.wd-card p{font-size:14.5px;color:var(--muted);line-height:1.55;margin-bottom:14px}
+.wd-tag{display:inline-block;padding:5px 10px;background:rgba(15,110,86,.1);color:var(--green);font-size:11.5px;font-weight:700;border-radius:4px;text-transform:uppercase;letter-spacing:.04em}
+
+/* ===== БЛОК 3: СРАВНЕНИЕ ПОТРЕБ vs ЗАЛОГ (центральный блок воронки) ===== */
+.compare-types{background:var(--cream);position:relative}
+.ct-table{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow-md)}
+.ct-head{display:grid;grid-template-columns:1.5fr 1fr 1fr;background:var(--ink);color:#fff}
+.ct-head>div{padding:24px 28px;border-right:1px solid rgba(255,255,255,.1)}
+.ct-head>div:last-child{border-right:0}
+.ct-head .col-lbl{font-size:11px;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.08em;font-weight:700;margin-bottom:6px}
+.ct-head h3{font-size:22px;font-weight:700;line-height:1.2}
+.ct-head .rec{display:inline-block;margin-top:8px;padding:4px 10px;background:var(--amber);color:#fff;font-size:11px;font-weight:800;border-radius:4px;text-transform:uppercase;letter-spacing:.05em}
+.ct-row{display:grid;grid-template-columns:1.5fr 1fr 1fr;border-top:1px solid var(--line)}
+.ct-row>div{padding:18px 28px;border-right:1px solid var(--line);font-size:14.5px;display:flex;align-items:center}
+.ct-row>div:last-child{border-right:0}
+.ct-row .crit{font-weight:700;color:var(--ink)}
+.ct-row .val{color:var(--muted)}
+.ct-row .val b{color:var(--ink);font-weight:700}
+.ct-row.win{background:rgba(15,110,86,.04)}
+.ct-row.win .val{color:var(--ink);font-weight:600}
+.ct-foot{display:grid;grid-template-columns:1.5fr 1fr 1fr;border-top:1px solid var(--line);background:var(--cream-mid)}
+.ct-foot>div{padding:24px 28px;border-right:1px solid var(--line);text-align:center}
+.ct-foot>div:last-child{border-right:0}
+.ct-foot .ct-cta{display:inline-block;padding:11px 22px;background:var(--green);color:#fff;border-radius:8px;font-weight:700;font-size:13.5px}
+.ct-foot .ct-cta.outline{background:transparent;color:var(--green);border:2px solid var(--green);padding:9px 20px}
+.ct-honest{margin-top:24px;text-align:center;font-size:13.5px;color:var(--muted);line-height:1.55;max-width:760px;margin-left:auto;margin-right:auto;font-style:italic}
+.ct-honest::before{content:"\201C";font-family:'IBM Plex Serif',serif;color:var(--green);font-size:32px;line-height:0;margin-right:6px;vertical-align:-12px}
+
+/* ===== СЦЕНАРИИ — без бизнеса, восемь карточек ===== */
+.scenarios{background:var(--cream-mid)}
+.sc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.sc-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;transition:all .2s;display:flex;flex-direction:column;gap:14px;min-height:180px;position:relative}
+.sc-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);border-color:var(--line-strong)}
+.sc-card .icon{width:40px;height:40px;border-radius:10px;background:var(--cream-mid);display:flex;align-items:center;justify-content:center;color:var(--green)}
+.sc-card .icon svg{width:22px;height:22px}
+.sc-card h3{font-size:16.5px;font-weight:700;line-height:1.3;flex:1}
+.sc-card .arr{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--green)}
+.sc-card.featured{grid-column:span 2;background:var(--green);color:#fff;border-color:var(--green)}
+.sc-card.featured .icon{background:rgba(255,255,255,.15);color:#fff}
+.sc-card.featured h3{font-size:22px}
+.sc-card.featured .arr{color:#fff}
+.sc-card.featured::after{content:"★ помогаем чаще всего";position:absolute;top:16px;right:16px;font-size:11px;font-weight:700;color:rgba(255,255,255,.7);letter-spacing:.04em}
+
+/* ===== КЕЙСЫ С ПЕРЕВОДОМ ===== */
+.cases-conv{background:var(--cream)}
+.cc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cc-card{background:var(--cream-mid);border:1px solid var(--line);border-radius:14px;padding:26px}
+.cc-tag{display:inline-block;padding:5px 10px;background:var(--amber);color:#fff;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;border-radius:4px;margin-bottom:14px}
+.cc-card h4{font-size:16px;font-weight:700;line-height:1.35;margin-bottom:10px}
+.cc-card p{font-size:14px;color:var(--muted);line-height:1.55;margin-bottom:16px}
+.cc-bridge{padding:14px;background:var(--cream);border-radius:10px;border-left:3px solid var(--green);font-size:13.5px;line-height:1.5}
+.cc-bridge b{color:var(--green);display:block;margin-bottom:4px;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em}
+.cc-result{display:flex;gap:18px;margin-top:14px;padding-top:16px;border-top:1px solid var(--line-strong)}
+.cc-metric{flex:1}
+.cc-metric b{font-size:18px;font-weight:800;display:block;letter-spacing:-.01em}
+.cc-metric span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;font-weight:600}
+
+/* === ОСТАЛЬНОЕ (как было): эксперты, банки, отзывы, FAQ, CTA === */
+.experts-mini{background:var(--cream-mid)}
+.em-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.em-card{background:var(--cream);border:1px solid var(--line);border-radius:14px;overflow:hidden;text-align:center}
+.em-photo{aspect-ratio:1/1;background:linear-gradient(135deg,#2B4A3D 0%,#1A2F26 100%);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.3)}
+.em-photo svg{width:42px;height:42px}
+.em-info{padding:14px}
+.em-name{font-size:13.5px;font-weight:700;line-height:1.25;margin-bottom:3px}
+.em-role{font-size:11.5px;color:var(--muted);margin-bottom:10px}
+.em-stat b{font-size:14px;color:var(--green);font-weight:800}
+.em-stat span{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+
+.banks{background:var(--cream)}
+.banks-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.bank-tile{aspect-ratio:1.6/1;background:#fff;border:1px solid var(--line);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700;font-size:13px;text-align:center;padding:10px;filter:grayscale(100%);opacity:.85;transition:all .2s}
+.bank-tile:hover{filter:grayscale(0);opacity:1;border-color:var(--green)}
+.bank-tile.more{background:var(--green);color:#fff;border-color:var(--green);filter:none;opacity:1}
+
+.reviews{background:var(--cream-mid)}
+.rv-agg{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:40px}
+.rv-badge{background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:20px}
+.rv-badge .plat{font-size:12.5px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+.rv-badge .score{font-size:30px;font-weight:800;letter-spacing:-.02em;display:flex;align-items:baseline;gap:8px;margin:6px 0}
+.rv-badge .score span{font-size:14px;color:var(--amber)}
+.rv-badge .count{font-size:12px;color:var(--muted)}
+.rv-quote{background:var(--cream);border-radius:14px;padding:48px;position:relative}
+.rv-quote::before{content:"\201C";position:absolute;top:10px;left:28px;font-size:120px;color:var(--green);font-family:serif;line-height:1;opacity:.15}
+.rv-quote blockquote{font-family:'IBM Plex Serif',serif;font-style:italic;font-size:22px;line-height:1.5;margin-bottom:26px;position:relative}
+.rv-author{display:flex;gap:14px;align-items:center}
+.rv-author .av{width:48px;height:48px;border-radius:50%;background:var(--amber);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
+.rv-author b{display:block;font-size:15px;font-weight:700}
+.rv-author span{font-size:12.5px;color:var(--muted)}
+
+.faq{background:var(--cream)}
+.faq-wrap{max-width:880px;margin:0 auto}
+.faq-item{background:var(--cream-mid);border:1px solid var(--line);border-radius:12px;margin-bottom:12px;overflow:hidden}
+.faq-q{padding:20px 26px;font-size:16px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.faq-q::after{content:"+";font-size:24px;color:var(--green);font-weight:400;transition:transform .2s}
+.faq-item.open .faq-q::after{transform:rotate(45deg)}
+.faq-a{padding:0 26px 22px;font-size:14.5px;line-height:1.6;color:var(--muted);display:none}
+.faq-item.open .faq-a{display:block}
+
+.final-cta{background:linear-gradient(135deg,var(--green-dark) 0%,var(--green) 100%);color:#fff;padding:88px 0;position:relative;overflow:hidden}
+.final-cta::before{content:"";position:absolute;right:-100px;top:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(201,133,28,.15) 0%,transparent 60%)}
+.fc-wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center;position:relative;z-index:1}
+.fc-wrap h2{color:#fff;font-size:44px}
+.fc-wrap h2 em{color:var(--amber)}
+.fc-wrap p{color:rgba(255,255,255,.75);font-size:17px;margin-bottom:20px}
+.fc-form{background:rgba(255,255,255,.06);backdrop-filter:blur(10px);padding:32px;border-radius:14px;border:1px solid rgba(255,255,255,.12)}
+.fc-form input{width:100%;padding:14px 16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:10px;color:#fff;font-size:15px;margin-bottom:10px;font-family:inherit}
+.fc-form input::placeholder{color:rgba(255,255,255,.45)}
+.fc-form button{width:100%;padding:14px;background:var(--amber);color:#fff;border:0;border-radius:10px;font-weight:700;font-size:15px;cursor:pointer;font-family:inherit}
+
+footer{background:var(--green-dark);color:#DDE9E2;padding:64px 0 24px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.foot-col h4{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:18px;color:#fff}
+.foot-col ul{list-style:none}
+.foot-col li{margin-bottom:10px}
+.foot-col a{font-size:13.5px;color:rgba(221,233,226,.7)}
+.foot-col a:hover{color:#fff}
+.foot-bottom{padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:11.5px;color:rgba(221,233,226,.55);line-height:1.55}
+.foot-bottom a{color:rgba(221,233,226,.75);text-decoration:underline}
+
+@media (max-width:1100px){
+  .hero-grid{grid-template-columns:1fr;gap:32px}
+  .seg-wrap{grid-template-columns:1fr;gap:32px}
+  .ct-head,.ct-row,.ct-foot{grid-template-columns:1fr;}
+  .ct-row>div,.ct-head>div,.ct-foot>div{border-right:0;border-bottom:1px solid var(--line)}
+  .sc-grid{grid-template-columns:repeat(2,1fr)}
+  .sc-card.featured{grid-column:span 2}
+  .em-grid{grid-template-columns:repeat(3,1fr)}
+  .em-grid .em-card:nth-child(n+4){display:none}
+  .wd-grid,.cc-grid{grid-template-columns:1fr}
+  .banks-grid{grid-template-columns:repeat(4,1fr)}
+  .rv-agg{grid-template-columns:repeat(2,1fr)}
+  .fc-wrap{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:700px){
+  .menu,.announce-left{display:none}
+  h1{font-size:36px!important}
+  h2{font-size:26px!important}
+  .stat-row{grid-template-columns:repeat(2,1fr)}
+  .sc-grid{grid-template-columns:1fr}
+  .sc-card.featured{grid-column:span 1}
+  .em-grid{grid-template-columns:1fr 1fr}
+  .banks-grid{grid-template-columns:repeat(3,1fr)}
+  .rv-agg{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  section{padding:56px 0}
+  .quote-overlay,.hero-form{position:static;width:100%;margin-top:16px;max-width:100%}
+  .photo-box{aspect-ratio:4/3}
+}
+</style>
+</head>
+<body>
+
+<div class="announce">
+  <div class="container announce-inner">
+    <div class="announce-left">
+      <span>Работаем с любой КИ</span>
+      <span>Без предоплаты</span>
+      <span>Пн–Пт 9:00–20:00</span>
+    </div>
+    <div class="announce-right">
+      <a href="https://wa.me/74957777752">WhatsApp</a>
+      <a href="tel:+74957777752" class="tel">+7 (495) 777-77-52</a>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="/" class="logo">
+      <div class="logo-mark">К</div>
+      <div class="logo-text"><b>Кредит Консалтинг</b><small>credit24.ru · с 2005 года</small></div>
+    </a>
+    <nav class="menu">
+      <div class="menu-item"><a href="/pomosch-v-kredite/">Помощь в кредите</a>
+        <div class="dropdown">
+          <a href="/pomosch-v-kredite/" class="star">★ Помощь в получении кредита</a>
+          <a href="/pomosch-v-kredite/pomosch-v-kredite-s-prosrochkami/">С просрочками</a>
+          <a href="/pomosch-v-kredite/pomosch-v-poluchenii-kredita-s-plohoi-kreditnoi-istoriei/">С плохой КИ</a>
+          <a href="/pomosch-v-kredite/poluchit-kredit-pensioneru/">Пенсионерам</a>
+          <a href="/pomosch-v-kredite/pomoch-v-kredite-v-msk/">Помощь в Москве</a>
+        </div>
+      </div>
+      <div class="menu-item"><a href="/kredit-pod-zalog/">Под залог</a>
+        <div class="dropdown">
+          <a href="/kredit-pod-zalog-kvartiry-v-moskve/" class="star">★ Под залог квартиры</a>
+          <a href="/kredit-pod-zalog/kredit-pod-zalog-doma/">Под залог дома</a>
+          <a href="/kredit-pod-zalog/doli/">Под залог доли</a>
+          <a href="/kredit-pod-zalog/komnaty/">Под залог комнаты</a>
+          <a href="/kredit-pod-zalog/kredit-pod-zalog-dachi/">Под залог дачи</a>
+          <a href="/kredit-pod-zalog/uchastka/">Под залог участка</a>
+          <hr>
+          <a href="/kredit-pod-zalog/kredit-pod-zalog-avtomobilya/">Под залог авто</a>
+          <a href="/kredit-pod-zalog/kredit-pod-zalog-pts/">Под залог ПТС</a>
+        </div>
+      </div>
+      <div class="menu-item"><a href="/refinansirovanie/">Перезалог</a>
+        <div class="dropdown">
+          <a href="/refinansirovanie/perezalog-kvartiry/" class="star">★ Перезалог квартиры</a>
+          <a href="/refinansirovanie/perezalog-ot-chastnogo-investora-v-bank/">От инвестора в банк</a>
+          <a href="/refinansirovanie/refinansirovanie-zalogovogo-kredita/">Рефинансирование залогового</a>
+          <a href="/refinansirovanie/refinansirovanie-ipoteki/">Рефинансирование ипотеки</a>
+        </div>
+      </div>
+      <a href="/pomosch-v-ipoteke/">Ипотека</a>
+      <div class="menu-item"><a href="/about/">О нас</a>
+        <div class="dropdown">
+          <a href="/about/">О компании</a>
+          <a href="/komanda/">Команда</a>
+          <a href="/cases/">Истории клиентов</a>
+          <a href="/sertifikaty/">Сертификаты</a>
+          <a href="/garantii/">Гарантии</a>
+          <a href="/otzyvy/">Отзывы</a>
+        </div>
+      </div>
+      <a href="/kontakty/">Контакты</a>
+    </nav>
+    <a href="#cta-final" class="cta-top">Консультация</a>
+  </div>
+</header>
+
+<!-- ============= HERO: ПРО ПОМОЩЬ, НЕ ПРО ЗАЛОГ ============= -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="badge-year"><span class="dot"></span>На рынке Москвы с 2005 года · 21 год опыта</span>
+        <h1>Поможем получить кредит,<br>когда банки <em>отказали</em></h1>
+        <p class="hero-sub">21 год опыта, 50+ банков-партнёров и собственная сеть инвесторов. Подберём оптимальную программу под вашу ситуацию — даже с плохой кредитной историей и просрочками.</p>
+
+        <div class="stat-row">
+          <div class="stat-card"><div class="num">21<em>год</em></div><div class="lbl">на рынке<br>Москвы</div></div>
+          <div class="stat-card"><div class="num">50<em>+</em></div><div class="lbl">банков-<br>партнёров</div></div>
+          <div class="stat-card"><div class="num">5000<em>+</em></div><div class="lbl">выданных<br>кредитов</div></div>
+          <div class="stat-card"><div class="num">1<em>день</em></div><div class="lbl">до решения<br>по заявке</div></div>
+        </div>
+
+        <div class="rating-bar">
+          <div class="rating-item"><span class="plat">Yandex</span><b>4.8</b><span class="stars">★★★★★</span></div>
+          <div class="rating-item"><span class="plat">Zoon</span><b>4.8</b><span class="stars">★★★★★</span></div>
+          <div class="rating-item"><span class="plat">2ГИС</span><b>4.7</b><span class="stars">★★★★★</span></div>
+          <div class="rating-item"><span class="plat">Google</span><b>4.9</b><span class="stars">★★★★★</span></div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="photo-box">
+          <div class="photo-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+            <em>Фото Геннадия Викторовича</em>
+            Вертикальное 4:5 · деловой костюм
+          </div>
+        </div>
+        <div class="quote-overlay">«Отказ банка — это не приговор, а вопрос правильной упаковки заявки. За 20 лет таких упаковок было больше тысячи.»</div>
+        <form class="hero-form" onsubmit="event.preventDefault();alert('Демо: форма отправлена')">
+          <h3>Получите решение за 1 день</h3>
+          <p>Бесплатная консультация эксперта</p>
+          <input type="text" placeholder="Ваше имя" required>
+          <input type="tel" placeholder="+7 (___) ___-__-__" required>
+          <input type="text" placeholder="Желаемая сумма">
+          <button type="submit">Получить консультацию →</button>
+          <p class="consent">Нажимая кнопку, вы соглашаетесь с <a href="/privacy-policy/" style="color:rgba(255,255,255,.7);text-decoration:underline">политикой конфиденциальности</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= БЛОК 1: СКОЛЬКО ВАМ НУЖНО (ползунок-сегментатор) ============= -->
+<section class="amount-segmenter">
+  <div class="container">
+    <div class="seg-wrap">
+      <div class="seg-left">
+        <div class="kicker">Шаг 1 — определим вариант</div>
+        <h2>Сколько вам <em>нужно</em>?</h2>
+        <p>Перетащите ползунок — мы покажем, какая программа кредитования оптимальна именно для вашей суммы. Это бесплатно и ни к чему не обязывает.</p>
+        <p style="font-size:14px;color:var(--muted)"><b>Почему сумма важна.</b> Под разные суммы работают разные банки и программы. Маленькую сумму выгоднее взять потребительским, крупную — под залог. Мы покажем разницу честно.</p>
+      </div>
+
+      <div class="seg-right">
+        <div class="seg-slider-wrap">
+          <label>Сумма кредита <b id="seg-v">3 000 000 ₽</b></label>
+          <input type="range" min="100000" max="15000000" step="100000" value="3000000" oninput="segUpdate()" id="seg-input">
+          <div class="ticks">
+            <span>100 тыс</span>
+            <span>500 тыс</span>
+            <span>1,5 млн</span>
+            <span>5 млн</span>
+            <span>15 млн</span>
+          </div>
+        </div>
+
+        <div class="seg-result" id="seg-result">
+          <div class="seg-tag" id="seg-tag">Залоговый кредит</div>
+          <h4 id="seg-title">Под вашу сумму оптимален залоговый кредит</h4>
+          <p id="seg-desc">Сумма от 1,5 млн ₽ — это уже выше потолка большинства потребительских программ. Залог квартиры даст вам нужные деньги под ставку в 1,5–2 раза ниже потребительского. И это работает даже при плохой кредитной истории.</p>
+          <a href="#compare-types" class="seg-link" id="seg-link">Посмотреть детальное сравнение →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= БЛОК 2: ПОЧЕМУ ОТКАЗЫВАЮТ БАНКИ ============= -->
+<section class="why-deny">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Шаг 2 — поймём вашу ситуацию</div>
+      <h2>Почему банки <em>отказывают</em> в потребительском кредите</h2>
+      <p>Большинство наших клиентов уже получили 2–4 отказа в банках, прежде чем найти нас. Вот шесть основных причин — узнайте свою.</p>
+    </div>
+
+    <div class="wd-grid">
+      <div class="wd-card">
+        <div class="wd-num">I</div>
+        <h3>Высокая долговая нагрузка</h3>
+        <p>По правилам ЦБ РФ платежи по всем кредитам не должны превышать 50% дохода. Если у вас уже есть ипотека, автокредит или карты с долгом — лимит почти выбран.</p>
+        <span class="wd-tag">У 60% наших клиентов</span>
+      </div>
+      <div class="wd-card">
+        <div class="wd-num">II</div>
+        <h3>«Серый» доход</h3>
+        <p>Зарплата в конверте или ИП с неполной отчётностью — банк видит низкий официальный доход и считает риск невозврата высоким. Реальные доходы значения не имеют.</p>
+        <span class="wd-tag">У 40% самозанятых</span>
+      </div>
+      <div class="wd-card">
+        <div class="wd-num">III</div>
+        <h3>Низкий скоринговый балл</h3>
+        <p>Банк смотрит на вашу кредитную историю в БКИ. Просрочки, частые отказы, закрытые с нарушениями кредиты — всё это снижает балл и закрывает доступ к низким ставкам.</p>
+        <span class="wd-tag">Главная причина</span>
+      </div>
+      <div class="wd-card">
+        <div class="wd-num">IV</div>
+        <h3>Возрастные ограничения</h3>
+        <p>До 21 года и после 65 лет банки выдают потребительский неохотно или совсем не выдают. Особенно жёстко по сумме — больше 500–700 тыс редко одобряют.</p>
+        <span class="wd-tag">Пенсионеры и студенты</span>
+      </div>
+      <div class="wd-card">
+        <div class="wd-num">V</div>
+        <h3>Короткий стаж работы</h3>
+        <p>На текущем месте меньше 6 месяцев — большинство банков сразу отказывают. Новая работа с высокой зарплатой не помогает: банк смотрит на стабильность, а не на цифру.</p>
+        <span class="wd-tag">После смены работы</span>
+      </div>
+      <div class="wd-card">
+        <div class="wd-num">VI</div>
+        <h3>«Цепочка отказов» в БКИ</h3>
+        <p>Каждая поданная заявка фиксируется в БКИ. Если за месяц вы получили 4–5 отказов — это сигнал: следующие банки откажут автоматически, не разбираясь в причинах.</p>
+        <span class="wd-tag">Замкнутый круг</span>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:36px;font-size:15px;color:var(--muted);max-width:680px;margin-left:auto;margin-right:auto;line-height:1.55">
+      <b style="color:var(--ink)">Узнали свою ситуацию?</b> Если хотя бы одна из причин вам знакома — потребительский, скорее всего, не дадут. Но это не значит, что денег не получится взять. Ниже — честное сравнение всех рабочих вариантов.
+    </div>
+  </div>
+</section>
+
+<!-- ============= БЛОК 3: СРАВНЕНИЕ ПОТРЕБ vs ЗАЛОГ ============= -->
+<section class="compare-types" id="compare-types">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Шаг 3 — выберите осознанно</div>
+      <h2>Потребительский или <em>залоговый</em> — что выгоднее</h2>
+      <p>Честное сравнение без маркетинга. Каждая программа имеет плюсы и минусы — выбирайте, что лучше подходит под вашу задачу.</p>
+    </div>
+
+    <div class="ct-table">
+      <div class="ct-head">
+        <div><div class="col-lbl">Параметр</div><h3>Сравнение программ</h3></div>
+        <div><div class="col-lbl">Вариант 1</div><h3>Потребительский</h3></div>
+        <div><div class="col-lbl">Вариант 2</div><h3>Залог квартиры</h3><span class="rec">Рекомендуем при сумме от 1,5 млн</span></div>
+      </div>
+
+      <div class="ct-row win">
+        <div class="crit">Максимальная сумма</div>
+        <div class="val"><b>до 1,5 млн ₽</b><br><span style="font-size:12px">в редких случаях — до 5 млн</span></div>
+        <div class="val"><b>до 30 млн ₽</b><br><span style="font-size:12px;color:var(--green)">до 70% от стоимости квартиры</span></div>
+      </div>
+      <div class="ct-row win">
+        <div class="crit">Ставка в 2026 году</div>
+        <div class="val"><b>22–34% годовых</b><br><span style="font-size:12px">в среднем по рынку</span></div>
+        <div class="val"><b>16–22% годовых</b><br><span style="font-size:12px;color:var(--green)">через нас — от 16,5%</span></div>
+      </div>
+      <div class="ct-row">
+        <div class="crit">Срок кредита</div>
+        <div class="val">до 7 лет</div>
+        <div class="val">до 25 лет</div>
+      </div>
+      <div class="ct-row win">
+        <div class="crit">При плохой КИ</div>
+        <div class="val">Откажут или дадут малую сумму под высокий процент</div>
+        <div class="val"><b>Одобряют</b> — банку важнее ликвидность залога, чем КИ</div>
+      </div>
+      <div class="ct-row">
+        <div class="crit">Срок оформления</div>
+        <div class="val"><b>1 день</b><br><span style="font-size:12px;color:var(--green)">плюс этой программы</span></div>
+        <div class="val">5–14 дней<br><span style="font-size:12px">оценка + сделка</span></div>
+      </div>
+      <div class="ct-row">
+        <div class="crit">Залог</div>
+        <div class="val"><b>Не требуется</b><br><span style="font-size:12px;color:var(--green)">плюс этой программы</span></div>
+        <div class="val">Ваша квартира, дом или доля<br><span style="font-size:12px">остаётся в собственности</span></div>
+      </div>
+      <div class="ct-row">
+        <div class="crit">Подойдёт при</div>
+        <div class="val">Срочной потребности до 1 млн с хорошей КИ</div>
+        <div class="val">Сумме от 1,5 млн или сложной кредитной истории</div>
+      </div>
+
+      <div class="ct-foot">
+        <div></div>
+        <div><a href="/pomosch-v-kredite/" class="ct-cta outline">Подробнее →</a></div>
+        <div><a href="/kredit-pod-zalog-kvartiry-v-moskve/" class="ct-cta">Рассчитать платёж →</a></div>
+      </div>
+    </div>
+
+    <p class="ct-honest">Мы — кредитные брокеры. Зарабатываем комиссию с каждой одобренной заявки. Но не пытаемся продать клиенту что-то, что ему не подходит. Если по вашей ситуации потребительский — лучший вариант, мы скажем именно это и поможем его получить.»</p>
+  </div>
+</section>
+
+<!-- ============= СЦЕНАРИИ ============= -->
+<section class="scenarios">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Частые ситуации</div>
+      <h2>С чем приходят <em>чаще всего</em></h2>
+      <p>За 21 год работы мы видели сотни вариантов. Скорее всего, по вашему случаю у нас уже есть готовая схема.</p>
+    </div>
+
+    <div class="sc-grid">
+      <a href="/pomosch-v-kredite/" class="sc-card featured">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+        <h3>Банки уже отказали — нужна помощь в подборе программы</h3>
+        <span class="arr">Получить помощь эксперта →</span>
+      </a>
+      <a href="/pomosch-v-kredite/pomosch-v-poluchenii-kredita-s-plohoi-kreditnoi-istoriei/" class="sc-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 22h20z"/><path d="M12 10v5"/></svg></div>
+        <h3>Плохая кредитная история, есть просрочки</h3>
+        <span class="arr">Узнать варианты →</span>
+      </a>
+      <a href="/pomosch-v-kredite/poluchit-kredit-pensioneru/" class="sc-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></div>
+        <h3>Нужен кредит пенсионеру</h3>
+        <span class="arr">Программы для пенсии →</span>
+      </a>
+      <a href="/pomosch-v-ipoteke/" class="sc-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14"/></svg></div>
+        <h3>Хочу ипотеку — льготные программы</h3>
+        <span class="arr">Посмотреть программы →</span>
+      </a>
+      <a href="/kredit-pod-zalog-kvartiry-v-moskve/" class="sc-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg></div>
+        <h3>Нужна крупная сумма — от 1,5 млн ₽</h3>
+        <span class="arr">Залог квартиры →</span>
+      </a>
+      <a href="/refinansirovanie/refinansirovanie-zalogovogo-kredita/" class="sc-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 01-9 9M3 12a9 9 0 019-9"/></svg></div>
+        <h3>Хочу снизить платёж по уже взятому кредиту</h3>
+        <span class="arr">Посчитать экономию →</span>
+      </a>
+      <a href="/proverka-ki/" class="sc-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
+        <h3>Проверить свой кредитный рейтинг бесплатно</h3>
+        <span class="arr">Узнать балл →</span>
+      </a>
+      <a href="#cta-final" class="sc-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/></svg></div>
+        <h3>Не знаю, что мне подойдёт</h3>
+        <span class="arr">Бесплатная консультация →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============= КЕЙСЫ С ПЕРЕВОДОМ «ШЁЛ ЗА ПОТРЕБОМ — ВЗЯЛ ЗАЛОГ» ============= -->
+<section class="cases-conv">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Реальные истории</div>
+      <h2>Шёл за потребом — <em>взял под залог</em>. И не пожалел</h2>
+      <p>В 80% случаев, когда клиенту нужно больше 1,5 млн или у него плохая КИ, залоговый вариант оказывается выгоднее. Вот как это работает на практике.</p>
+    </div>
+
+    <div class="cc-grid">
+      <div class="cc-card">
+        <span class="cc-tag">Кейс №1 · март 2026</span>
+        <h4>Ирина, 42 года, бухгалтер</h4>
+        <p>Пришла за потребительским кредитом 2,5 млн на ремонт квартиры. Банки отказали — две просрочки в 2023 году. Геннадий показал расчёт: даже если бы потреб одобрили, она переплатила бы 1,8 млн за 5 лет. Под залог квартиры — те же 2,5 млн под 17,9% за 7 лет.</p>
+        <div class="cc-bridge">
+          <b>Что изменило решение</b>
+          Ирина была собственницей квартиры, в которой и так живёт. Залог не означал, что её «отбирают» — это было обременение в Росреестре, которое снимется после погашения. Платёж на 22 000 ₽/мес ниже потребительского.
+        </div>
+        <div class="cc-result">
+          <div class="cc-metric"><b>2 500 000 ₽</b><span>Сумма</span></div>
+          <div class="cc-metric"><b>17,9%</b><span>Ставка</span></div>
+          <div class="cc-metric"><b>−820 тыс</b><span>Экономия за срок</span></div>
+        </div>
+      </div>
+
+      <div class="cc-card">
+        <span class="cc-tag">Кейс №2 · февраль 2026</span>
+        <h4>Михаил, 51 год, IT-разработчик</h4>
+        <p>Хотел потребительский 4 млн на запуск своего бизнеса. Банки одобрили только 1,2 млн под 28% — недостаточно. Геннадий предложил: под залог квартиры на Юго-Западной можно получить 4,5 млн под 18% на 10 лет. Платёж — даже ниже, чем по тому маленькому потребу.</p>
+        <div class="cc-bridge">
+          <b>Что изменило решение</b>
+          Михаил понял: 4 млн под 18% — это в реальности дешевле, чем 1,2 млн под 28%. Сравнение в цифрах, не в эмоциях. Через 9 дней деньги были на счёте.
+        </div>
+        <div class="cc-result">
+          <div class="cc-metric"><b>4 500 000 ₽</b><span>Сумма</span></div>
+          <div class="cc-metric"><b>18,0%</b><span>Ставка</span></div>
+          <div class="cc-metric"><b>10 лет</b><span>Срок</span></div>
+        </div>
+      </div>
+
+      <div class="cc-card">
+        <span class="cc-tag">Кейс №3 · декабрь 2025</span>
+        <h4>Елена, 38 лет, мать троих детей</h4>
+        <p>Нужно было 800 тыс на лечение. Банки отказали — официальный доход 28 тыс/мес, неработающий муж. Геннадий не стал «прокачивать» через банки — оформил под залог комнаты, доставшейся от бабушки, через нашу сеть инвесторов. Деньги — за 2 дня.</p>
+        <div class="cc-bridge">
+          <b>Что изменило решение</b>
+          Елена даже не знала, что под залог комнаты можно взять кредит. Её ситуация для банков была безнадёжной, но для частного инвестора с залогом — стандартная сделка.
+        </div>
+        <div class="cc-result">
+          <div class="cc-metric"><b>800 000 ₽</b><span>Сумма</span></div>
+          <div class="cc-metric"><b>22%</b><span>Ставка</span></div>
+          <div class="cc-metric"><b>2 дня</b><span>До получения</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:36px">
+      <a href="/cases/" class="cta-top" style="display:inline-flex">Смотреть все 30 кейсов →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============= ЭКСПЕРТЫ ============= -->
+<section class="experts-mini">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Команда</div>
+      <h2>Эксперты, которые <em>лично</em> ведут вашу сделку</h2>
+      <p>Никаких кол-центров и автоответчиков. Каждый клиент закрепляется за одним сотрудником — от первого звонка до получения денег.</p>
+    </div>
+    <div class="em-grid">
+      <a href="/komanda/" class="em-card"><div class="em-photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></div><div class="em-info"><div class="em-name">Овчинников Г. В.</div><div class="em-role">Зам. директора</div><div class="em-stat"><b>20 лет</b><br><span>стаж</span></div></div></a>
+      <a href="/komanda/" class="em-card"><div class="em-photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></div><div class="em-info"><div class="em-name">Евдокимов А. В.</div><div class="em-role">Ведущий специалист</div><div class="em-stat"><b>28 лет</b><br><span>стаж</span></div></div></a>
+      <a href="/komanda/" class="em-card"><div class="em-photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></div><div class="em-info"><div class="em-name">Белова И. Е.</div><div class="em-role">Андеррайтер</div><div class="em-stat"><b>15 лет</b><br><span>стаж</span></div></div></a>
+      <a href="/komanda/" class="em-card"><div class="em-photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></div><div class="em-info"><div class="em-name">Проценко С. В.</div><div class="em-role">Специалист</div><div class="em-stat"><b>12 лет</b><br><span>стаж</span></div></div></a>
+      <a href="/komanda/" class="em-card"><div class="em-photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></div><div class="em-info"><div class="em-name">Андреева В. Н.</div><div class="em-role">Ген. директор</div><div class="em-stat"><b>21 год</b><br><span>стаж</span></div></div></a>
+    </div>
+    <div style="text-align:center;margin-top:30px"><a href="/komanda/" class="cta-top" style="display:inline-flex">Подробнее о команде →</a></div>
+  </div>
+</section>
+
+<!-- ============= БАНКИ ============= -->
+<section class="banks">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Банки-партнёры</div><h2>Работаем с <em>50+ банками</em> напрямую</h2></div>
+    <div class="banks-grid">
+      <div class="bank-tile">Сбер</div><div class="bank-tile">ВТБ</div><div class="bank-tile">Совкомбанк</div>
+      <div class="bank-tile">Альфа-Банк</div><div class="bank-tile">Газпромбанк</div><div class="bank-tile">Россельхозбанк</div>
+      <div class="bank-tile">Открытие</div><div class="bank-tile">Тинькофф</div><div class="bank-tile">Росбанк</div>
+      <div class="bank-tile">Абсолют Банк</div><div class="bank-tile">МТС Банк</div>
+      <a href="/sertifikaty/" class="bank-tile more">+40 банков →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============= ОТЗЫВЫ ============= -->
+<section class="reviews">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Что говорят клиенты</div><h2>Нас рекомендуют <em>на четырёх площадках</em></h2></div>
+    <div class="rv-agg">
+      <div class="rv-badge"><div class="plat">Яндекс.Карты</div><div class="score">4.8<span>★★★★★</span></div><div class="count">1 042 отзыва</div></div>
+      <div class="rv-badge"><div class="plat">Zoon</div><div class="score">4.8<span>★★★★★</span></div><div class="count">647 отзывов</div></div>
+      <div class="rv-badge"><div class="plat">2ГИС</div><div class="score">4.7<span>★★★★★</span></div><div class="count">389 отзывов</div></div>
+      <div class="rv-badge"><div class="plat">Google</div><div class="score">4.9<span>★★★★★</span></div><div class="count">214 отзывов</div></div>
+    </div>
+    <div class="rv-quote">
+      <blockquote>Обращалась после того, как четыре банка отказали по потребу. Геннадий посмотрел мою ситуацию и предложил залог квартиры — я сначала испугалась. Но он спокойно всё объяснил, показал договор, что квартира остаётся моей, банк только получает залог. В итоге через 4 дня мне выдали 2,4 миллиона под 17% на 5 лет. Работу свою они делают честно, комиссию взяли только после получения денег.</blockquote>
+      <div class="rv-author"><div class="av">ЕС</div><div><b>Елена С.</b><span>Кредит под залог квартиры · 2 400 000 ₽ · март 2026</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= FAQ ============= -->
+<section class="faq">
+  <div class="container">
+    <div class="section-head" style="text-align:center;margin:0 auto 48px"><div class="kicker">Частые вопросы</div><h2>То, что <em>спрашивают</em> чаще всего</h2></div>
+    <div class="faq-wrap">
+      <div class="faq-item open"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Если у меня уже было 3 отказа — есть смысл обращаться?</div><div class="faq-a">Да. Большинство клиентов приходит к нам именно после 2–4 отказов. Мы анализируем причину каждого отказа в БКИ и подбираем тот банк или программу, в которой ваша ситуация не является стоп-фактором. В крайних случаях работаем через сеть частных инвесторов — для них КИ вторична.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Что если у меня нет залога — поможете получить потреб?</div><div class="faq-a">Поможем. Но честно: при сумме до 1 млн и нормальной КИ потребительский вы скорее возьмёте сами в любом банке. Наша помощь нужна, когда: сумма от 1 млн, плохая КИ, серый доход, есть просрочки, или уже было несколько отказов. В таких случаях мы реально можем помочь — есть схемы, которых клиент сам не знает.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Сколько стоят ваши услуги? Берёте ли предоплату?</div><div class="faq-a">Комиссия 3–7% от суммы одобренного кредита. Никакой предоплаты. Оплата только после того, как деньги фактически поступили на ваш счёт. До этого все консультации, подбор банка и подача документов — бесплатно. Если кредит не одобрили — вы не должны ничего.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Зачем посредник, если я могу сам подать в банк?</div><div class="faq-a">Можете и сами. Если ваша ситуация простая — это лучший вариант. Мы нужны, когда: вам нужно подать в 5–8 банков одновременно (а не последовательно с интервалом в месяц, чтобы не портить БКИ); у вас была плохая КИ — мы знаем, как «упаковать» заявку под критерии; ваша сумма — крупная, нужны прямые контакты с андеррайтерами для индивидуальной ставки. По нашей статистике, через нас одобряют в 2,5 раза чаще, чем при самостоятельной подаче.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Почему вы постоянно говорите о залоге, если я пришёл за потребом?</div><div class="faq-a">Потому что для большинства клиентов с суммой от 1,5 млн или с проблемами в КИ потребительский — невыгодный или невозможный вариант. Мы показываем все альтернативы честно. Если по вашей конкретной ситуации потреб — лучшее решение, мы оформим именно его. Мы не «впариваем» залог, мы показываем варианты с цифрами.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Какие документы нужны для первой консультации?</div><div class="faq-a">Достаточно паспорта и устного описания ситуации. Никаких документов «авансом» не требуется. На первой консультации мы только разбираем вашу историю, причины отказов и подбираем направление работы. Сбор документов — следующий этап, после согласования.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= FINAL CTA ============= -->
+<section class="final-cta" id="cta-final">
+  <div class="container">
+    <div class="fc-wrap">
+      <div>
+        <div class="kicker" style="color:var(--amber)">Бесплатная консультация</div>
+        <h2>Не знаете, <em>одобрят ли именно вам</em>?</h2>
+        <p>Оставьте номер — за 15 минут разберём вашу ситуацию и скажем прямо: берёмся или нет, и на каких условиях. Без общих фраз и маркетинга.</p>
+        <p style="color:rgba(255,255,255,.9);font-size:15px">Звонок по Москве — <b>бесплатно</b>. Обязательств не накладываем. Предоплаты не берём.</p>
+      </div>
+      <form class="fc-form" onsubmit="event.preventDefault();alert('Демо: заявка отправлена')">
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="tel" placeholder="+7 (___) ___-__-__" required>
+        <input type="text" placeholder="Желаемая сумма, ₽">
+        <button type="submit">Получить расчёт →</button>
+        <p style="font-size:11px;color:rgba(255,255,255,.55);margin-top:12px;line-height:1.5">Нажимая «Получить расчёт», вы соглашаетесь с <a href="/privacy-policy/" style="color:rgba(255,255,255,.8);text-decoration:underline">политикой обработки ПДн</a>.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============= FOOTER ============= -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px"><div class="logo-mark" style="background:var(--cream);color:var(--green)">К</div><b style="color:#fff;font-size:17px">Кредит Консалтинг</b></div>
+        <p style="font-size:13.5px;line-height:1.6;color:rgba(221,233,226,.7);margin-bottom:14px">г. Москва, ул. Кировоградская, 22Г<br>м. Пражская · 3 минуты пешком</p>
+        <a href="tel:+74957777752" style="display:block;margin-bottom:6px;font-weight:700;color:#fff">+7 (495) 777-77-52</a>
+        <a href="mailto:info@credit24.ru" style="font-size:13.5px;color:rgba(221,233,226,.8)">info@credit24.ru</a>
+      </div>
+      <div class="foot-col">
+        <h4>Услуги</h4>
+        <ul>
+          <li><a href="/pomosch-v-kredite/">Помощь в получении кредита</a></li>
+          <li><a href="/kredit-pod-zalog-kvartiry-v-moskve/">Под залог квартиры</a></li>
+          <li><a href="/kredit-pod-zalog/kredit-pod-zalog-doma/">Под залог дома</a></li>
+          <li><a href="/kredit-pod-zalog/doli/">Под залог доли</a></li>
+          <li><a href="/refinansirovanie/perezalog-kvartiry/">Перезалог квартиры</a></li>
+          <li><a href="/pomosch-v-ipoteke/">Помощь в ипотеке</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Сервисы</h4>
+        <ul>
+          <li><a href="/proverka-ki/">Проверка КИ</a></li>
+          <li><a href="/kalkulyator/">Калькулятор</a></li>
+          <li><a href="/dokumenty/">Документы для кредита</a></li>
+          <li><a href="/antikollektor/">Антиколлектор</a></li>
+          <li><a href="/agentam/">Агентам</a></li>
+          <li><a href="/bezopasnost/">Мошенники — осторожно</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Компания</h4>
+        <ul>
+          <li><a href="/about/">О нас</a></li>
+          <li><a href="/komanda/">Команда</a></li>
+          <li><a href="/cases/">Истории клиентов</a></li>
+          <li><a href="/sertifikaty/">Сертификаты</a></li>
+          <li><a href="/garantii/">Гарантии</a></li>
+          <li><a href="/otzyvy/">Отзывы</a></li>
+          <li><a href="/kontakty/">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2005–2026 · ООО «Кредит Консалтинг» · ИНН 7723776013 · ОГРН 1107746891339. Юр. адрес: 117587, Москва, ул. Кировоградская, 22Г. Сайт носит информационный характер и не является публичной офертой в соответствии со ст. 435 и 437 ГК РФ. ООО «Кредит Консалтинг» является кредитным брокером и не кредитором. <a href="/privacy-policy/">Политика конфиденциальности</a> · <a href="/agreement/">Пользовательское соглашение</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+function segUpdate(){
+  const v=+document.getElementById('seg-input').value;
+  document.getElementById('seg-v').textContent=v.toLocaleString('ru')+' ₽';
+  const r=document.getElementById('seg-result');
+  const tag=document.getElementById('seg-tag');
+  const t=document.getElementById('seg-title');
+  const d=document.getElementById('seg-desc');
+  const l=document.getElementById('seg-link');
+  r.style.borderLeftColor='var(--green)';
+  if(v<=500000){
+    tag.textContent='Потребительский кредит';
+    t.textContent='Под вашу сумму подойдёт потребительский за 1 день';
+    d.textContent='Сумма до 500 тыс ₽ — типичная для потребительского кредита. Если кредитная история нормальная, банки одобрят за 1 день. Поможем подать заявку сразу в 5–8 банков для лучшей ставки.';
+    l.innerHTML='Узнать про потребительский →';
+    l.href='/pomosch-v-kredite/';
+    r.style.borderLeftColor='var(--green)';
+  } else if(v<=1500000){
+    tag.textContent='Потребительский · с нашей помощью';
+    t.textContent='Сумма пограничная — нужна помощь в подборе банка';
+    d.textContent='От 500 тыс до 1,5 млн ₽ — банки подходят к одобрению строже. Если есть малейшие сомнения в КИ или доходе — высока вероятность отказа. Здесь нужно правильно подобрать банк, и мы это умеем.';
+    l.innerHTML='Получить помощь →';
+    l.href='/pomosch-v-kredite/';
+    r.style.borderLeftColor='var(--amber)';
+  } else if(v<=5000000){
+    tag.textContent='Залоговый кредит';
+    t.textContent='Под вашу сумму оптимален залоговый кредит';
+    d.textContent='Сумма от 1,5 млн ₽ — это уже выше потолка большинства потребительских программ. Залог квартиры даст вам нужные деньги под ставку в 1,5–2 раза ниже потребительского. И это работает даже при плохой кредитной истории.';
+    l.innerHTML='Посмотреть детальное сравнение →';
+    l.href='#compare-types';
+    r.style.borderLeftColor='var(--green)';
+  } else {
+    tag.textContent='Только залог · единственный вариант';
+    t.textContent='Сумма крупная — только под залог недвижимости';
+    d.textContent='Свыше 5 млн ₽ — потребительский кредит вообще не вариант. Здесь работают только программы под залог квартиры или дома. Через нас — ставка от 16,5%, до 70% от стоимости объекта, срок до 25 лет.';
+    l.innerHTML='Рассчитать платёж →';
+    l.href='/kredit-pod-zalog-kvartiry-v-moskve/';
+    r.style.borderLeftColor='var(--green)';
+  }
+}
+segUpdate();
+</script>
+</body>
+</html>
